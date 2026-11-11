@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TacoCrafts — what I can make</title>
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --panel2:#1e232d; --line:#2a303c;
+    --txt:#e8ecf3; --mut:#9aa4b3; --acc:#4f9e6e; --gold:#e6b450;
+    --bad:#e6674a; --druid:#ff7c0a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.45}
+  .wrap{max-width:920px;margin:0 auto;padding:28px 18px 60px}
+  header{border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:20px}
+  h1{font-size:22px;margin:0 0 6px}
+  .sub{color:var(--mut);font-size:13px}
+  .job{font-size:13px;color:var(--druid);font-weight:600}
+
+  .summary{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+  .sum-chip{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+    padding:9px 14px;font-size:12.5px;color:var(--mut)}
+  .sum-chip b{font-size:20px;display:block;color:var(--txt)}
+  .sum-chip.ok b{color:var(--acc)}
+  .sum-chip.miss b{color:var(--bad)}
+
+  .search{margin-bottom:14px}
+  .search input{width:100%;background:var(--panel);border:1px solid var(--line);color:var(--txt);
+    border-radius:8px;padding:10px 14px;font-size:14px;outline:none}
+  .search input:focus{border-color:var(--druid)}
+  .search input::placeholder{color:var(--mut)}
+
+  .cards{display:grid;grid-template-columns:1fr;gap:18px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px}
+  .card h2{font-size:16px;margin:0 0 4px}
+  .card .head-line{color:var(--mut);font-size:13px;margin-bottom:12px}
+
+  .skill{height:8px;background:var(--panel2);border-radius:5px;overflow:hidden;margin:8px 0 14px}
+  .skill i{display:block;height:100%;background:var(--acc)}
+
+  .rec{border-top:1px solid var(--line);padding:8px 0;display:flex;gap:10px;align-items:flex-start}
+  .rec:first-of-type{border-top:none}
+  .rec .thumb{width:30px;height:30px;border-radius:6px;flex:none;overflow:hidden;
+    background:var(--panel2);display:inline-flex;align-items:center;justify-content:center;
+    font-size:14px;font-weight:700;color:var(--mut);vertical-align:middle}
+  .rec .thumb img{width:100%;height:100%;object-fit:cover}
+  .rec .body{flex:1;min-width:0}
+  .rec .nm{font-weight:600;font-size:14px;display:flex;align-items:center;gap:8px}
+  .rec .craftable{font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:20px;flex:none}
+  .rec.yes .craftable{color:#0c1410;background:var(--acc)}
+  .rec.no .craftable{color:#2b120d;background:var(--bad)}
+  .rec .needs{color:var(--mut);font-size:12.5px;margin-top:3px}
+  .rec .needs img{width:14px;height:14px;border-radius:3px;vertical-align:-3px}
+  .need{display:inline}
+  .no-emp{color:var(--bad);font-weight:700}
+
+  .mats{display:flex;flex-wrap:wrap;gap:8px}
+  .mat{background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:13px;
+    display:inline-flex;align-items:center;gap:6px}
+  .mat .thumb{width:20px;height:20px;border-radius:4px;overflow:hidden;background:var(--panel);
+    display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:var(--mut);vertical-align:middle}
+  .mat .thumb img{width:100%;height:100%;object-fit:cover}
+  .mat b{color:var(--acc);margin-right:2px}
+
+  .empty{color:var(--mut);font-style:italic}
+  footer{margin-top:26px;color:var(--mut);font-size:12px;text-align:center}
+  .banner{background:#3a2f14;border:1px solid #6b5a24;color:#f3d98b;border-radius:8px;
+    padding:10px 12px;font-size:13px;margin-bottom:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div id="banner-box"></div>
+  <header>
+    <h1 id="title">TacoCrafts</h1>
+    <div class="sub" id="sub">loading…</div>
+    <div class="job" id="job"></div>
+  </header>
+  <div class="summary" id="summary"></div>
+  <div class="search"><input id="q" type="text" placeholder="Search recipes or materials… (e.g. elixir, steel, fortitude)"></div>
+  <div class="cards" id="cards"></div>
+  <footer id="foot">Generated locally from game data.</footer>
+</div>
+
+<script>
+async function main(){
+  const bannerBox = document.getElementById('banner-box');
+  const title = document.getElementById('title');
+  const sub = document.getElementById('sub');
+  const job = document.getElementById('job');
+  const cards = document.getElementById('cards');
+  const foot = document.getElementById('foot');
+  const summaryBox = document.getElementById('summary');
+  const q = document.getElementById('q');
+
+  let d;
+  try{
+    const r = await fetch('data.json',{cache:'no-store'});
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    d = await r.json();
+  }catch(e){
+    if(location.protocol === 'file:'){
+      const s=document.createElement('div'); s.className='banner';
+      s.innerHTML='<b>Opening via file:// — data.json can’t load.</b> Run <code>python serve.py</code> and open <code>http://localhost:8000</code>.';
+      bannerBox.appendChild(s); return;
+    }
+    sub.textContent='Failed to load data.json: '+e.message; return;
+  }
+
+  title.textContent = (d.character? d.character+' — crafts':'TacoCrafts');
+  sub.textContent = (d.realm||'')+(d.faction?' · '+d.faction:'')+(d.classKey?' · '+d.classKey:'')+
+    (d.updated?' · updated '+new Date(d.updated*1000).toLocaleString():'');
+
+  const profs=d.professions||[], mats=d.materials||[];
+
+  // only materials that are actually a reagent in some recipe -> "alchemy materials on hand"
+  const reagentIds=new Set();
+  (profs||[]).forEach(p=>(p.recipes||[]).forEach(r=>(r.reagents||[]).forEach(g=>reagentIds.add(g.itemId))));
+  const relevantMats=mats.filter(m=>reagentIds.has(m.itemId)).sort((a,b)=>((a.name||'').localeCompare(b.name||'')));
+  // name/icon lookup for backfilling reagent data from materials we hold
+  const nameById={}, iconById={};
+  mats.forEach(m=>{ if(m.itemId!=null){ if(m.name)nameById[m.itemId]=m.name; if(m.icon)iconById[m.itemId]=m.icon; }});
+
+  function matCount(itemId){ for(const m of mats) if(m.itemId===itemId) return m.count; return 0; }
+  function isCraftable(r){
+    if(!r.reagents||!r.reagents.length) return true;
+    return (r.reagents||[]).every(g=>(matCount(g.itemId)||0)>=(g.count||1));
+  }
+
+  // ---- summary chips ----
+  const allRecipes=(profs||[]).flatMap(p=>p.recipes||[]);
+  const yes=allRecipes.filter(isCraftable).length;
+  summaryBox.innerHTML =
+    '<div class="sum-chip ok"><b>'+yes+'</b>craftable now</div>'+
+    '<div class="sum-chip miss"><b>'+(allRecipes.length-yes)+'</b>need materials</div>'+
+    '<div class="sum-chip"><b>'+allRecipes.length+'</b>learned recipes</div>';
+
+  // ---- professions card ----
+  const profCard=document.createElement('div'); profCard.className='card';
+  profCard.innerHTML='<h2>I can craft</h2><div class="head-line" id="profline"></div><div id="reclist"></div>';
+  cards.appendChild(profCard);
+  const profline=document.getElementById('profline'), reclist=document.getElementById('reclist');
+  if(!profs.length || !(profs[0].recipes||[]).length){
+    profline.textContent='No profession data yet. Open the profession window & log out.';
+    reclist.innerHTML='<div class="empty">Nothing recorded.</div>';
+  }else{
+    const p=profs[0];
+    job.textContent=p.name+(p.secondary?' (secondary)':'');
+    const recRows=(p.recipes||[]).map(r=>({...r, craftable:isCraftable(r)}))
+      .sort((a,b)=>(a.name||'').localeCompare(b.name||''));
+
+    function renderFiltered(){
+      const term=(q.value||'').trim().toLowerCase();
+      reclist.innerHTML='';
+      let shown=0;
+      const filtered=term? recRows.filter(r=>
+        (r.name||'').toLowerCase().includes(term) ||
+        (r.reagents||[]).some(g=>(g.name||nameById[g.itemId]||'').toLowerCase().includes(term))
+      ): recRows;
+      filtered.forEach(r=>{
+        shown++;
+        const row=document.createElement('div'); row.className='rec '+(r.craftable?'yes':'no');
+        let needs='';
+        if(r.reagents&&r.reagents.length){
+          needs='needs: '+r.reagents.map(g=>{
+            const onHand=matCount(g.itemId);
+            const rname=g.name||nameById[g.itemId]||('item '+g.itemId);
+            const have=(onHand||0)>=(g.count||1);
+            return '<span class="need'+(have?'':' no-emp')+'">'+thumb(g.icon||iconById[g.itemId],14,10)+' '+esc(rname)+' ×'+(g.count||1)+(onHand?' <b>('+onHand+' have)</b>':'')+'</span>';
+          }).join(' · ');
+        }
+        row.innerHTML=
+          '<span class="thumb">'+thumb(r.icon||r.spellId,30,14)+'</span>'+
+          '<div class="body"><div class="nm">'+esc(r.name||('recipe '+r.spellId))+
+            '<span class="craftable">'+(r.craftable?'✓ CRAFTABLE':'needs mats')+'</span></div>'+
+            (needs?'<div class="needs">'+needs+'</div>':'')+'</div>';
+        reclist.appendChild(row);
+      });
+      profline.textContent=(p.level!=null?'Skill '+p.level+'/'+p.maxLevel+' · ':'')+
+        shown+' of '+recRows.length+' recipes';
+    }
+    if(p.level!=null&&p.maxLevel){
+      const sb=document.createElement('div'); sb.className='skill';
+      sb.innerHTML='<i style="width:'+Math.min(100,Math.round(100*p.level/p.maxLevel))+'%"></i>';
+      profline.after(sb);
+    }
+    q.addEventListener('input', renderFiltered);
+    renderFiltered();
+  }
+
+  // ---- materials card ----
+  const matCard=document.createElement('div'); matCard.className='card';
+  matCard.innerHTML='<h2>Alchemy materials on hand</h2>'+
+    '<div class="head-line">'+relevantMats.length+' of '+mats.length+' inventory items are used by your recipes</div>'+
+    '<div class="mats" id="matlist"></div>';
+  const matlist=matCard.querySelector('#matlist');
+  if(!relevantMats.length) matlist.innerHTML='<div class="empty">No recipe-relevant materials — grab herbs and rescan.</div>';
+  else relevantMats.forEach(m=>{
+    const chip=document.createElement('div'); chip.className='mat';
+    chip.innerHTML='<span class="thumb">'+thumb(m.icon,20,11)+'</span><b>'+m.count+'</b>'+esc(m.name||('item '+m.itemId));
+    matlist.appendChild(chip);
+  });
+  cards.appendChild(matCard);
+
+  foot.textContent='Source: '+(d._source||'game save').replace(/\//g,' / ')+(d.schema?' · schema '+d.schema:'');
+}
+
+// tiny item-icon renderer. icon is a bare filename (inv_potion_17) -> public Zamimg CDN;
+// numeric fileDataID / missing -> letter placeholder.
+function thumb(icon,px,letterPx){
+  if(icon && !/^\d+$/.test(String(icon))){
+    const url='https://wow.zamimg.com/images/wow/icons/large/'+String(icon).toLowerCase()+'.jpg';
+    return '<img src="'+url+'" width="'+px+'" height="'+px+'" alt="" onerror="this.style.display=\'none\'">';
+  }
+  return '<span style="font-size:'+letterPx+'px">☐</span>';
+}
+function esc(s){ return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+main();
+</script>
+</body>
+</html>

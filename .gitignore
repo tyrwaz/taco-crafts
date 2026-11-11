@@ -1,0 +1,7 @@
+forever_cache.json
+__pycache__/
+fixture/
+icon_map.json
+resolve_icons.py
+convert.py
+serve.py
