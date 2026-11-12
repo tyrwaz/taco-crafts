@@ -2,7 +2,7 @@
 ## Title: TacoCrafts
 ## Notes: Exports learned recipes + materials for a web page.
 ## Author: taco
-## Version: 0.1
+## Version: 0.2
 ## SavedVariablesPerCharacter: TacoCraftsDB
 ## X-Icons: Interface\ICONS\INV_Potion_17
 TacoCrafts.lua
