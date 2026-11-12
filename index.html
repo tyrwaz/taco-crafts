@@ -480,7 +480,7 @@
               : 1;
           }
           return {
-            name: r.name, spellId: r.spellId, cat: cat[0], catLabel: cat[1],
+            name: r.name, spellId: r.spellId, icon: r.icon || null, cat: cat[0], catLabel: cat[1],
             liquid: LIQUID[r.name] || null,
             reagents: reagents,
             crafts: crafts || 0,
@@ -566,7 +566,12 @@
         return '<svg width="' + size + '" height="' + size + '" aria-hidden="true" style="--liquid:' + (r.liquid || c.liquid) + '"><use href="#' + c.sym + '"/></svg>';
       }
       function recipeIconHTML(r) {
-        var file = r.spellId ? ICON_MAP[r.spellId] : null;
+        // Prefer the icon the addon exported for this recipe (addon 0.2+),
+        // then the spellId map, then the category flask. A numeric-only
+        // icon is a fileDataID, not a Zamimg filename, so it falls through.
+        var file = null;
+        if (r.icon && typeof r.icon === "string" && !/^\d+$/.test(r.icon)) file = r.icon.toLowerCase();
+        if (!file && r.spellId) file = ICON_MAP[r.spellId] || null;
         if (!file) return catFlaskHTML(r, 38);
         return '<img src="' + ICON_BASE + file + '.jpg" alt="" width="40" height="40" loading="lazy" data-cat="' + r.cat + '" data-liquid="' + (r.liquid || "") + '" onerror="iconFallback(this)">';
       }
