@@ -315,6 +315,61 @@ local function buildMeta()
     end
 end
 
+-- -----------------------------------------------------------------------------
+-- Missing-name recovery (0.3): item info loads asynchronously after a reload.
+-- A scan taken on a cold cache gets nil names from C_Item.GetItemInfo /
+-- GetItemInfo for most items (only recently-touched items are cached), and
+-- the SavedVariables then ship nameless reagents/materials to the web page.
+-- So after every scan: ask the client to load the missing items, and
+-- re-resolve names when they arrive (ITEM_INFO_RECEIVED) plus on a short
+-- delay, saving whenever anything was fixed. Names already present are
+-- never touched, so a warm-cache scan costs nothing here.
+-- -----------------------------------------------------------------------------
+local function resolveMissingNames()
+    ensureDB()
+    local fixed = false
+    local function fix(entry)
+        if entry and not entry.name and entry.itemId then
+            local name = itemName(entry.itemId)
+            if name then entry.name = name; fixed = true end
+        end
+    end
+    if db.profession and db.profession.recipes then
+        for _, r in ipairs(db.profession.recipes) do
+            if r.reagents then for _, g in ipairs(r.reagents) do fix(g) end end
+        end
+    end
+    if db.materials then for _, m in pairs(db.materials) do fix(m) end end
+    if fixed then
+        pcall(buildMeta)
+        pcall(SaveVariables)
+    end
+    return fixed
+end
+
+local function requestMissingNames()
+    ensureDB()
+    local function req(entry)
+        if entry and not entry.name and entry.itemId and C_Item and C_Item.RequestLoadItemDataByID then
+            pcall(C_Item.RequestLoadItemDataByID, entry.itemId)
+        end
+    end
+    if db.profession and db.profession.recipes then
+        for _, r in ipairs(db.profession.recipes) do
+            if r.reagents then for _, g in ipairs(r.reagents) do req(g) end end
+        end
+    end
+    if db.materials then for _, m in pairs(db.materials) do req(m) end end
+end
+
+-- After a scan, give the item cache a moment to warm up, then fill in any
+-- names that were nil at scan time (and request loads for the rest).
+local function scheduleNameRecovery()
+    requestMissingNames()
+    C_Timer.After(2, function() pcall(resolveMissingNames) end)
+    C_Timer.After(6, function() pcall(resolveMissingNames) end)
+end
+
 function TacoCraftsDebug()
     pcall(buildMeta)
     local out = {}
@@ -366,6 +421,9 @@ SlashCmdList["TACOCRAFTS"] = function(msg)
         local matsOk = pcall(scanMaterials)
         pcall(buildMeta)
         pcall(SaveVariables)
+        -- item info may still be loading after a reload; fill in any names
+        -- that came back nil once the cache warms up
+        pcall(scheduleNameRecovery)
         print("TacoCrafts: scan ran. profOk=" .. tostring(profOk) .. " matsOk=" .. tostring(matsOk))
         if db.lastScan and db.lastScan.reason then
             print("TacoCrafts: scan bail reason: " .. db.lastScan.reason)
@@ -387,6 +445,7 @@ frame:RegisterEvent("TRADE_SKILL_UPDATE")
 frame:RegisterEvent("TRADE_SKILL_SHOW")
 frame:RegisterEvent("BANKFRAME_OPENED")
 frame:RegisterEvent("PLAYER_LOGOUT")
+frame:RegisterEvent("ITEM_INFO_RECEIVED")
 
 -- Ensure the Professions-book OnShow hook is attached. The frame doesn't exist until
 -- Blizzard_ProfessionsBook is loaded, and that only happens when you open the book —
@@ -423,13 +482,18 @@ frame:SetScript("OnEvent", function(self, event, arg1)
         return
     end
 
-    if event == "TRADE_SKILL_SHOW" or event == "TRADE_SKILL_UPDATE" or event == "TRADE_SKILL_LIST_UPDATE" then
+    if event == "ITEM_INFO_RECEIVED" then
+        -- an item we asked the client to load is ready; fill in any names
+        -- that were nil at scan time and persist if anything changed
+        pcall(resolveMissingNames)
+    elseif event == "TRADE_SKILL_SHOW" or event == "TRADE_SKILL_UPDATE" or event == "TRADE_SKILL_LIST_UPDATE" then
         -- debounce: scanning costs frame time, avoid doing it on every partial refresh
         if tradeSkillDebounce then tradeSkillDebounce:Cancel() end
         tradeSkillDebounce = C_Timer.After(0.3, function()
             pcall(scanProfession)
             pcall(buildMeta)
             pcall(SaveVariables)
+            pcall(scheduleNameRecovery)
         end)
     elseif event == "BANKFRAME_OPENED" then
         pcall(scanMaterials)
