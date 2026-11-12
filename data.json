@@ -4,7 +4,7 @@
   "realm": "CAMWOW US2 Realm 10 RP PvP",
   "faction": "Horde",
   "classKey": "DRUID",
-  "updated": 1794464762,
+  "updated": 1794466182,
   "professions": [
     {
       "name": "Alchemy",
@@ -780,11 +780,6 @@
       "icon": "inv_egg_03"
     },
     {
-      "count": 2,
-      "name": "Deviate Scale",
-      "itemId": 6470
-    },
-    {
       "count": 5,
       "name": "Earthroot",
       "itemId": 2449,
@@ -816,11 +811,6 @@
     },
     {
       "count": 1,
-      "name": "Glowing Shard",
-      "itemId": 10441
-    },
-    {
-      "count": 1,
       "name": "Grave Moss",
       "itemId": 3369
     },
@@ -829,12 +819,6 @@
       "name": "Hearthstone",
       "itemId": 6948,
       "icon": "inv_misc_rune_01"
-    },
-    {
-      "count": 1,
-      "name": "Heavy Shortbow",
-      "itemId": 3036,
-      "icon": "inv_weapon_bow_12"
     },
     {
       "count": 1,
@@ -855,12 +839,6 @@
       "icon": "inv_drink_06"
     },
     {
-      "count": 4,
-      "name": "Light Feather",
-      "itemId": 17056,
-      "icon": "inv_feather_04"
-    },
-    {
       "count": 7,
       "name": "Mageroyal",
       "itemId": 785,
@@ -871,12 +849,6 @@
       "name": "Maple Seed",
       "itemId": 17034,
       "icon": "inv_misc_food_02"
-    },
-    {
-      "count": 1,
-      "name": "Mystic's Cape",
-      "itemId": 14365,
-      "icon": "inv_misc_cape_16"
     },
     {
       "count": 1,
@@ -895,17 +867,6 @@
       "itemId": 209846
     },
     {
-      "count": 10,
-      "name": "Serpentbloom",
-      "itemId": 5339
-    },
-    {
-      "count": 2,
-      "name": "Sharp Claw",
-      "itemId": 5635,
-      "icon": "inv_misc_monsterclaw_03"
-    },
-    {
       "count": 2,
       "name": "Silithid Egg",
       "itemId": 5058,
@@ -916,11 +877,6 @@
       "name": "Swiftthistle",
       "itemId": 2452,
       "icon": "inv_misc_herb_04"
-    },
-    {
-      "count": 1,
-      "name": "Tigerseye",
-      "itemId": 818
     },
     {
       "count": 6,
