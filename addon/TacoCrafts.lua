@@ -43,20 +43,48 @@ local function itemName(itemID)
     return nil
 end
 
--- Resolve an item's ICON FILENAME (e.g. "inv_potion_17") so the web page can render it
--- via the public Blizzard/Wowhead CDN. GetItemIcon normally returns a path like
--- "Interface\\ICONS\\INV_Potion_17"; strip down to the bare filename. Some builds return a
--- numeric fileDataID instead — store that as-is and let the page decide how to use it.
-local function itemIcon(itemID)
-    local ok, icon = pcall(GetItemIcon, itemID)
-    if not ok or not icon then return nil end
-    if type(icon) == "number" then return tostring(icon) end
-    -- strip directory + extension -> "INV_Potion_17" (case preserved for the CDN isn't needed; wowhead uses lowercase)
+-- Normalise a texture reference to a bare lowercase icon filename (e.g.
+-- "inv_potion_17") so the web page can render it via the Zamimg CDN
+-- (https://wow.zamimg.com/images/wow/icons/large/<name>.jpg). Texture APIs
+-- return a path like "Interface\\ICONS\\INV_Potion_17"; strip down to the
+-- basename, drop any extension, lowercase it. A numeric fileDataID has no
+-- Zamimg filename — return nil so callers can fall back instead.
+local function normalizeIcon(icon)
+    if not icon then return nil end
+    if type(icon) == "number" then return nil end
+    if type(icon) ~= "string" then return nil end
     icon = icon:gsub("\\", "/")
     local base = icon:match("([^/]+)$") or icon
     base = base:gsub("%.[^.]+$", "")
     if base == "" then return nil end
-    return base
+    return strlower(base)
+end
+
+-- Resolve an item's ICON FILENAME (e.g. "inv_potion_17") so the web page can render it
+-- via the public Blizzard/Wowhead CDN. GetItemIcon normally returns a path like
+-- "Interface\\ICONS\\INV_Potion_17"; strip down to the bare filename.
+local function itemIcon(itemID)
+    local ok, icon = pcall(GetItemIcon, itemID)
+    if not ok or not icon then return nil end
+    return normalizeIcon(icon)
+end
+
+-- Resolve a RECIPE's own icon (the one the profession UI shows for the spell).
+-- Prefer the legacy GetSpellTexture, which returns a texture path string;
+-- C_Spell.GetSpellTexture on retail builds returns a numeric fileDataID,
+-- which has no Zamimg filename, so a string result from it is used and a
+-- numeric one is ignored (caller falls back to the crafted item's icon).
+local function spellIcon(spellId)
+    local ok, tex = pcall(GetSpellTexture, spellId)
+    if ok and type(tex) == "string" then
+        local name = normalizeIcon(tex)
+        if name then return name end
+    end
+    if C_Spell and C_Spell.GetSpellTexture then
+        local ok2, tex2 = pcall(C_Spell.GetSpellTexture, spellId)
+        if ok2 and type(tex2) == "string" then return normalizeIcon(tex2) end
+    end
+    return nil
 end
 
 -- bag ranges (mirrors TSM Container.lua exactly: read live constants when available,
@@ -137,6 +165,7 @@ local function scanProfession()
             local recipe = {
                 spellId = spellId,
                 name = nil,
+                icon = nil,
                 reagents = {},
             }
             -- recipe name from the crafted-item link (what a guildmate reads)
@@ -148,6 +177,17 @@ local function scanProfession()
                 -- some recipes (salvage/chants) expose a recipe link instead
                 local okRl, recipeLink = pcall(C_TradeSkillUI.GetRecipeLink, spellId)
                 if okRl and recipeLink then recipe.name = linkName(recipeLink) end
+            end
+
+            -- recipe icon for the web page: the profession UI's own spell icon
+            -- first, then the crafted item's icon (for potions/elixirs that is
+            -- the same potion icon). Either way it is a Zamimg filename like
+            -- "inv_potion_17"; nil here means the page falls back to its
+            -- spellId map, then to the category flask.
+            recipe.icon = spellIcon(spellId)
+            if not recipe.icon and okLink and itemLink then
+                local craftedItemID = tonumber(strmatch(itemLink, "item:(%d+)"))
+                if craftedItemID then recipe.icon = itemIcon(craftedItemID) end
             end
 
             -- reagents from the schematic
