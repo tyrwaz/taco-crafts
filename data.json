@@ -4,7 +4,7 @@
   "realm": "CAMWOW US2 Realm 10 RP PvP",
   "faction": "Horde",
   "classKey": "DRUID",
-  "updated": 1794525828,
+  "updated": 1794552890,
   "professions": [
     {
       "name": "Alchemy",
@@ -803,22 +803,33 @@
   ],
   "materials": [
     {
-      "count": 6,
-      "name": "Briarthorn",
-      "itemId": 2450,
-      "icon": "inv_misc_root_01"
+      "count": 1,
+      "name": "Befouled Water Globe",
+      "itemId": 16408
     },
     {
-      "count": 22,
+      "count": 1,
+      "name": "Bright Bracers",
+      "itemId": 3647,
+      "icon": "inv_bracer_02"
+    },
+    {
+      "count": 19,
       "name": "Bruiseweed",
       "itemId": 2453,
       "icon": "inv_misc_herb_01"
     },
     {
+      "count": 9,
+      "name": "Bubbling Water",
+      "itemId": 9451,
+      "icon": "inv_potion_01"
+    },
+    {
       "count": 1,
-      "name": "Bundle of Reports",
-      "itemId": 16783,
-      "icon": "inv_scroll_07"
+      "name": "Deadly Blunderbuss",
+      "itemId": 4369,
+      "icon": "inv_weapon_rifle_07"
     },
     {
       "count": 1,
@@ -833,10 +844,26 @@
       "icon": "inv_misc_herb_07"
     },
     {
+      "count": 2,
+      "name": "Elixir of Lesser Defense",
+      "itemId": 3389
+    },
+    {
+      "count": 12,
+      "name": "Elixir of Minor Agility",
+      "itemId": 2457
+    },
+    {
       "count": 9,
       "name": "Empty Vial",
       "itemId": 3371,
       "icon": "inv_drink_06"
+    },
+    {
+      "count": 1,
+      "name": "Forest Leather Chestpiece",
+      "itemId": 3055,
+      "icon": "inv_chest_leather_08"
     },
     {
       "count": 6,
@@ -851,6 +878,24 @@
     },
     {
       "count": 1,
+      "name": "Greenweave Mantle of the Sorcerer",
+      "itemId": 10287,
+      "icon": "inv_shoulder_13"
+    },
+    {
+      "count": 1,
+      "name": "Harpy Claw Ring",
+      "itemId": 281252,
+      "icon": "inv_jewelry_ring_03"
+    },
+    {
+      "count": 1,
+      "name": "Healing Potion",
+      "itemId": 929,
+      "icon": "inv_potion_51"
+    },
+    {
+      "count": 1,
       "name": "Hearthstone",
       "itemId": 6948,
       "icon": "inv_misc_rune_01"
@@ -862,27 +907,38 @@
       "icon": "inv_scroll_03"
     },
     {
-      "count": 36,
+      "count": 42,
       "name": "Kingsblood",
       "itemId": 3356,
       "icon": "inv_misc_herb_03"
     },
     {
-      "count": 12,
+      "count": 5,
       "name": "Leaded Vial",
       "itemId": 3372,
       "icon": "inv_drink_06"
     },
     {
-      "count": 9,
+      "count": 5,
+      "name": "Lesser Healing Potion",
+      "itemId": 858,
+      "icon": "inv_potion_50"
+    },
+    {
+      "count": 8,
       "name": "Lesser Mageblood Elixir",
       "itemId": 250340
     },
     {
       "count": 5,
-      "name": "Light Feather",
-      "itemId": 17056,
-      "icon": "inv_feather_04"
+      "name": "Lesser Troll's Blood Elixir",
+      "itemId": 3388,
+      "icon": "inv_potion_78"
+    },
+    {
+      "count": 1,
+      "name": "Logging Rope",
+      "itemId": 16743
     },
     {
       "count": 1,
@@ -903,18 +959,92 @@
     },
     {
       "count": 3,
+      "name": "Melon Juice",
+      "itemId": 1205,
+      "icon": "inv_drink_09"
+    },
+    {
+      "count": 1,
+      "name": "Meteor Shard",
+      "itemId": 6220,
+      "icon": "inv_weapon_shortblade_25"
+    },
+    {
+      "count": 3,
       "name": "Minor Magic Resistance Potion",
       "itemId": 3384
     },
     {
-      "count": 1,
-      "name": "Scroll of Agility",
-      "itemId": 3012
+      "count": 2,
+      "name": "Minor Mana Potion",
+      "itemId": 2455
     },
     {
       "count": 1,
-      "name": "Sealed Journeyman Crate",
-      "itemId": 248766
+      "name": "Mutton Chop",
+      "itemId": 3770
+    },
+    {
+      "count": 1,
+      "name": "Patched Leather Belt",
+      "itemId": 1787
+    },
+    {
+      "count": 1,
+      "name": "Red Leather Bag",
+      "itemId": 2657
+    },
+    {
+      "count": 1,
+      "name": "Scouting Trousers of Arcane Wrath",
+      "itemId": 6587,
+      "icon": "inv_pants_02"
+    },
+    {
+      "count": 1,
+      "name": "Sharp Canine",
+      "itemId": 3301
+    },
+    {
+      "count": 1,
+      "name": "Sharp Claw",
+      "itemId": 5635,
+      "icon": "inv_misc_monsterclaw_03"
+    },
+    {
+      "count": 1,
+      "name": "Shredder Operating Manual - Chapter 3",
+      "itemId": 16644
+    },
+    {
+      "count": 1,
+      "name": "Shredder Operating Manual - Page 1",
+      "itemId": 16645
+    },
+    {
+      "count": 1,
+      "name": "Shredder Operating Manual - Page 12",
+      "itemId": 16656
+    },
+    {
+      "count": 1,
+      "name": "Shredder Operating Manual - Page 2",
+      "itemId": 16646
+    },
+    {
+      "count": 1,
+      "name": "Shredder Operating Manual - Page 5",
+      "itemId": 16649
+    },
+    {
+      "count": 2,
+      "name": "Shredder Operating Manual - Page 7",
+      "itemId": 16651
+    },
+    {
+      "count": 1,
+      "name": "Shredder Operating Manual - Page 8",
+      "itemId": 16652
     },
     {
       "count": 2,
@@ -923,13 +1053,39 @@
       "icon": "inv_egg_03"
     },
     {
+      "count": 1,
+      "name": "Spongy Morel",
+      "itemId": 4606
+    },
+    {
+      "count": 2,
+      "name": "Swiftthistle",
+      "itemId": 2452,
+      "icon": "inv_misc_herb_04"
+    },
+    {
+      "count": 1,
+      "name": "Warsong Oil",
+      "itemId": 16744
+    },
+    {
+      "count": 3,
+      "name": "Warsong Report",
+      "itemId": 16746
+    },
+    {
+      "count": 1,
+      "name": "Waylaid Crate: Apprentice Ore",
+      "itemId": 248683
+    },
+    {
       "count": 9,
       "name": "Wild Steelbloom",
       "itemId": 3355,
       "icon": "inv_misc_flower_01"
     },
     {
-      "count": 13,
+      "count": 4,
       "name": "Wool Cloth",
       "itemId": 2592,
       "icon": "inv_fabric_wool_01"
@@ -952,7 +1108,7 @@
     },
     "Herbalism": {
       "maxLevel": 225,
-      "level": 175
+      "level": 176
     },
     "First Aid": {
       "maxLevel": 75,
