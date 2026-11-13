@@ -1,7 +1,20 @@
-forever_cache.json
+# Secrets / local-only
+.cf_token
+*.cf_token*
+
+# Junk
+New Text Document.txt
+
+# Python
 __pycache__/
+*.pyc
+
+# Tooling test fixture (kept out of the repo)
 fixture/
-icon_map.json
-resolve_icons.py
-convert.py
-serve.py
+
+# Big regenerable offline dataset: the Wowhead-derived item icon cache.
+# 18 MB, rebuilt on demand; NOT committed. On a fresh clone, re-download it:
+#   curl -L -o forever_cache.json \
+#     "https://raw.githubusercontent.com/Napalmsteak/WoW-Classic-Item-Caches/main/Forever%20Cache.json"
+forever_cache.json
+
