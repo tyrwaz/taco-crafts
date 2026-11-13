@@ -4,12 +4,12 @@
   "realm": "CAMWOW US2 Realm 10 RP PvP",
   "faction": "Horde",
   "classKey": "DRUID",
-  "updated": 1794552890,
+  "updated": 1794558840,
   "professions": [
     {
       "name": "Alchemy",
       "skillId": 3,
-      "level": 179,
+      "level": 194,
       "maxLevel": 225,
       "secondary": false,
       "recipes": [
@@ -122,6 +122,30 @@
           ]
         },
         {
+          "name": "Mana Potion",
+          "spellId": 3452,
+          "reagents": [
+            {
+              "name": "Stranglekelp",
+              "count": 1,
+              "itemId": 3820,
+              "icon": "inv_misc_herb_11"
+            },
+            {
+              "name": "Kingsblood",
+              "count": 1,
+              "itemId": 3356,
+              "icon": "inv_misc_herb_03"
+            },
+            {
+              "name": "Leaded Vial",
+              "count": 1,
+              "itemId": 3372,
+              "icon": "inv_drink_06"
+            }
+          ]
+        },
+        {
           "name": "Lesser Mana Potion",
           "spellId": 3173,
           "reagents": [
@@ -189,6 +213,29 @@
               "name": "Empty Vial",
               "count": 1,
               "itemId": 3371,
+              "icon": "inv_drink_06"
+            }
+          ]
+        },
+        {
+          "name": "Lesser Invisibility Potion",
+          "spellId": 3448,
+          "reagents": [
+            {
+              "name": "Fadeleaf",
+              "count": 1,
+              "itemId": 3818
+            },
+            {
+              "name": "Wild Steelbloom",
+              "count": 1,
+              "itemId": 3355,
+              "icon": "inv_misc_flower_01"
+            },
+            {
+              "name": "Leaded Vial",
+              "count": 1,
+              "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
@@ -405,6 +452,29 @@
               "name": "Empty Vial",
               "count": 1,
               "itemId": 3371,
+              "icon": "inv_drink_06"
+            }
+          ]
+        },
+        {
+          "name": "Elixir of Lesser Fortitude",
+          "spellId": 3450,
+          "reagents": [
+            {
+              "name": "Wild Steelbloom",
+              "count": 1,
+              "itemId": 3355,
+              "icon": "inv_misc_flower_01"
+            },
+            {
+              "name": "Goldthorn",
+              "count": 1,
+              "itemId": 3821
+            },
+            {
+              "name": "Leaded Vial",
+              "count": 1,
+              "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
@@ -804,44 +874,21 @@
   "materials": [
     {
       "count": 1,
-      "name": "Befouled Water Globe",
-      "itemId": 16408
+      "name": "Briarthorn",
+      "itemId": 2450,
+      "icon": "inv_misc_root_01"
     },
     {
-      "count": 1,
-      "name": "Bright Bracers",
-      "itemId": 3647,
-      "icon": "inv_bracer_02"
-    },
-    {
-      "count": 19,
+      "count": 3,
       "name": "Bruiseweed",
       "itemId": 2453,
       "icon": "inv_misc_herb_01"
-    },
-    {
-      "count": 9,
-      "name": "Bubbling Water",
-      "itemId": 9451,
-      "icon": "inv_potion_01"
-    },
-    {
-      "count": 1,
-      "name": "Deadly Blunderbuss",
-      "itemId": 4369,
-      "icon": "inv_weapon_rifle_07"
     },
     {
       "count": 1,
       "name": "Deepmoss Egg",
       "itemId": 5570,
       "icon": "inv_egg_03"
-    },
-    {
-      "count": 7,
-      "name": "Earthroot",
-      "itemId": 2449,
-      "icon": "inv_misc_herb_07"
     },
     {
       "count": 2,
@@ -854,45 +901,10 @@
       "itemId": 2457
     },
     {
-      "count": 9,
+      "count": 11,
       "name": "Empty Vial",
       "itemId": 3371,
       "icon": "inv_drink_06"
-    },
-    {
-      "count": 1,
-      "name": "Forest Leather Chestpiece",
-      "itemId": 3055,
-      "icon": "inv_chest_leather_08"
-    },
-    {
-      "count": 6,
-      "name": "Frilled Lichen",
-      "itemId": 249399,
-      "icon": "inv_scroll_03"
-    },
-    {
-      "count": 1,
-      "name": "Grave Moss",
-      "itemId": 3369
-    },
-    {
-      "count": 1,
-      "name": "Greenweave Mantle of the Sorcerer",
-      "itemId": 10287,
-      "icon": "inv_shoulder_13"
-    },
-    {
-      "count": 1,
-      "name": "Harpy Claw Ring",
-      "itemId": 281252,
-      "icon": "inv_jewelry_ring_03"
-    },
-    {
-      "count": 1,
-      "name": "Healing Potion",
-      "itemId": 929,
-      "icon": "inv_potion_51"
     },
     {
       "count": 1,
@@ -907,13 +919,13 @@
       "icon": "inv_scroll_03"
     },
     {
-      "count": 42,
+      "count": 6,
       "name": "Kingsblood",
       "itemId": 3356,
       "icon": "inv_misc_herb_03"
     },
     {
-      "count": 5,
+      "count": 25,
       "name": "Leaded Vial",
       "itemId": 3372,
       "icon": "inv_drink_06"
@@ -930,18 +942,19 @@
       "itemId": 250340
     },
     {
-      "count": 5,
+      "count": 6,
       "name": "Lesser Troll's Blood Elixir",
       "itemId": 3388,
       "icon": "inv_potion_78"
     },
     {
-      "count": 1,
-      "name": "Logging Rope",
-      "itemId": 16743
+      "count": 2,
+      "name": "Liferoot",
+      "itemId": 3357,
+      "icon": "inv_misc_root_02"
     },
     {
-      "count": 1,
+      "count": 4,
       "name": "Mageroyal",
       "itemId": 785,
       "icon": "inv_jewelry_talisman_03"
@@ -958,19 +971,7 @@
       "icon": "inv_misc_food_02"
     },
     {
-      "count": 3,
-      "name": "Melon Juice",
-      "itemId": 1205,
-      "icon": "inv_drink_09"
-    },
-    {
-      "count": 1,
-      "name": "Meteor Shard",
-      "itemId": 6220,
-      "icon": "inv_weapon_shortblade_25"
-    },
-    {
-      "count": 3,
+      "count": 5,
       "name": "Minor Magic Resistance Potion",
       "itemId": 3384
     },
@@ -981,35 +982,14 @@
     },
     {
       "count": 1,
-      "name": "Mutton Chop",
-      "itemId": 3770
+      "name": "Rosecap",
+      "itemId": 249424,
+      "icon": "inv_scroll_03"
     },
     {
       "count": 1,
-      "name": "Patched Leather Belt",
-      "itemId": 1787
-    },
-    {
-      "count": 1,
-      "name": "Red Leather Bag",
-      "itemId": 2657
-    },
-    {
-      "count": 1,
-      "name": "Scouting Trousers of Arcane Wrath",
-      "itemId": 6587,
-      "icon": "inv_pants_02"
-    },
-    {
-      "count": 1,
-      "name": "Sharp Canine",
-      "itemId": 3301
-    },
-    {
-      "count": 1,
-      "name": "Sharp Claw",
-      "itemId": 5635,
-      "icon": "inv_misc_monsterclaw_03"
+      "name": "Sealed Apprentice Crate",
+      "itemId": 248765
     },
     {
       "count": 1,
@@ -1020,6 +1000,11 @@
       "count": 1,
       "name": "Shredder Operating Manual - Page 1",
       "itemId": 16645
+    },
+    {
+      "count": 1,
+      "name": "Shredder Operating Manual - Page 11",
+      "itemId": 16655
     },
     {
       "count": 1,
@@ -1053,11 +1038,6 @@
       "icon": "inv_egg_03"
     },
     {
-      "count": 1,
-      "name": "Spongy Morel",
-      "itemId": 4606
-    },
-    {
       "count": 2,
       "name": "Swiftthistle",
       "itemId": 2452,
@@ -1065,30 +1045,23 @@
     },
     {
       "count": 1,
-      "name": "Warsong Oil",
-      "itemId": 16744
+      "name": "Warsong Outrider Update",
+      "itemId": 16765
     },
     {
-      "count": 3,
+      "count": 1,
       "name": "Warsong Report",
       "itemId": 16746
     },
     {
       "count": 1,
-      "name": "Waylaid Crate: Apprentice Ore",
-      "itemId": 248683
+      "name": "Warsong Scout Update",
+      "itemId": 16764
     },
     {
-      "count": 9,
-      "name": "Wild Steelbloom",
-      "itemId": 3355,
-      "icon": "inv_misc_flower_01"
-    },
-    {
-      "count": 4,
-      "name": "Wool Cloth",
-      "itemId": 2592,
-      "icon": "inv_fabric_wool_01"
+      "count": 1,
+      "name": "Waylaid Crate: Journeyman Ore",
+      "itemId": 248687
     },
     {
       "count": 1,
@@ -1104,11 +1077,11 @@
     },
     "Alchemy": {
       "maxLevel": 225,
-      "level": 179
+      "level": 194
     },
     "Herbalism": {
       "maxLevel": 225,
-      "level": 176
+      "level": 180
     },
     "First Aid": {
       "maxLevel": 75,
