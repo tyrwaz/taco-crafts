@@ -18,13 +18,72 @@ ROOT = Path(__file__).resolve().parent
 GAME_SAVE = Path(r"C:\Program Files (x86)\World of Warcraft\_forever_\WTF\Account\TIFFANY1121\91\Kinato-Tyrnth\SavedVariables\TacoCrafts.lua")
 REMOTE = "origin"
 BRANCH = "main"
+LOCK = ROOT / ".push.lock"
 
 
 def run(cmd, **kw):
     return subprocess.run(cmd, shell=isinstance(cmd, str), capture_output=True, text=True, **kw)
 
 
+def repair_refs_if_broken():
+    """Self-heal NUL-corrupted git refs (seen twice: crash/kill-power mid ref-write).
+
+    A ref is broken if it contains a NUL byte or isn't a 40-hex SHA. Repairs by
+    restoring refs/heads/main from the last good entry in .git/logs/refs/heads/main
+    and deleting stale remote refs so the next fetch rebuilds them.
+    Returns a message when a repair happened, else None."""
+    import re as _re
+    head_ref = ROOT / ".git" / "refs" / "heads" / BRANCH
+    fixed = []
+    if head_ref.exists():
+        content = head_ref.read_bytes()
+        if b"\x00" in content or not _re.fullmatch(rb"[0-9a-f]{40}\s*", content.strip()):
+            log = ROOT / ".git" / "logs" / "refs" / "heads" / BRANCH
+            if log.exists():
+                lines = [l for l in log.read_text(errors="replace").splitlines() if l.strip()]
+                if lines:
+                    sha = lines[-1].split()[1]
+                    head_ref.write_text(sha + "\n")
+                    fixed.append(f"restored {BRANCH} -> {sha[:8]} from reflog")
+    # stale/broken remote refs: just drop them; fetch rebuilds
+    for name in ("main", "HEAD"):
+        p = ROOT / ".git" / "refs" / "remotes" / REMOTE / name
+        if p.exists() and (b"\x00" in p.read_bytes() or not _re.fullmatch(rb"[0-9a-f]{40}\s*", p.read_bytes().strip())):
+            p.unlink()
+            fixed.append(f"cleared broken {REMOTE}/{name} (fetch will rebuild)")
+    oh = ROOT / ".git" / "ORIG_HEAD"
+    if oh.exists() and b"\x00" in oh.read_bytes():
+        oh.unlink()
+        fixed.append("cleared broken ORIG_HEAD")
+    if fixed:
+        run(["git", "fetch", REMOTE], cwd=ROOT)
+        return "; ".join(fixed)
+    return None
+
+
 def deploy():
+    # guard against concurrent deploys colliding on git refs (a suspected
+    # contributor to the ref corruption)
+    if LOCK.exists():
+        age = time.time() - LOCK.stat().st_mtime
+        if age < 300:
+            print(f"another deploy appears to be running (lock age {int(age)}s); skipping")
+            return False
+    LOCK.write_text(str(time.time()))
+    try:
+        return _deploy()
+    finally:
+        try:
+            LOCK.unlink()
+        except OSError:
+            pass
+
+
+def _deploy():
+    # 0a. self-heal corrupted refs before anything touches git
+    msg = repair_refs_if_broken()
+    if msg:
+        print("[self-heal]", msg)
     if not GAME_SAVE.exists():
         print("no game save found; nothing to do")
         return False
