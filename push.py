@@ -25,6 +25,28 @@ def run(cmd, **kw):
     return subprocess.run(cmd, shell=isinstance(cmd, str), capture_output=True, text=True, **kw)
 
 
+import re as _re
+
+def _last_good_reflog_sha(log):
+    """Last 40-hex 'new' SHA from a reflog that may contain NUL-corrupted lines.
+
+    Reflog lines look like: <old-sha> <new-sha> <name> <email> <ts> <tz>\\t<msg>.
+    Malformed/NUL-corrupted trailing lines are skipped so a corrupted reflog
+    can't crash the self-heal."""
+    if not log.exists():
+        return None
+    raw = log.read_bytes()
+    for line in reversed(raw.split(b"\n")):
+        line = line.strip()
+        if not line:
+            continue
+        fields = line.split()
+        if len(fields) >= 2 and _re.fullmatch(rb"[0-9a-f]{40}", fields[0]) \
+                and _re.fullmatch(rb"[0-9a-f]{40}", fields[1]):
+            return fields[1].decode("ascii")
+    return None
+
+
 def repair_refs_if_broken():
     """Self-heal NUL-corrupted git refs (seen twice: crash/kill-power mid ref-write).
 
@@ -39,12 +61,10 @@ def repair_refs_if_broken():
         content = head_ref.read_bytes()
         if b"\x00" in content or not _re.fullmatch(rb"[0-9a-f]{40}\s*", content.strip()):
             log = ROOT / ".git" / "logs" / "refs" / "heads" / BRANCH
-            if log.exists():
-                lines = [l for l in log.read_text(errors="replace").splitlines() if l.strip()]
-                if lines:
-                    sha = lines[-1].split()[1]
-                    head_ref.write_text(sha + "\n")
-                    fixed.append(f"restored {BRANCH} -> {sha[:8]} from reflog")
+            sha = _last_good_reflog_sha(log)
+            if sha:
+                head_ref.write_text(sha + "\n")
+                fixed.append(f"restored {BRANCH} -> {sha[:8]} from reflog")
     # stale/broken remote refs: just drop them; fetch rebuilds
     for name in ("main", "HEAD"):
         p = ROOT / ".git" / "refs" / "remotes" / REMOTE / name
