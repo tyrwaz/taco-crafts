@@ -1,16 +1,16 @@
 {
   "schema": 1,
   "character": "Kinato",
-  "realm": "CAMWOW US2 Realm 10 RP PvP",
+  "realm": "",
   "faction": "Horde",
   "classKey": "DRUID",
-  "updated": 1794883667,
+  "updated": 1795239282,
   "professions": [
     {
       "name": "Alchemy",
       "skillId": 3,
-      "level": 225,
-      "maxLevel": 225,
+      "level": 269,
+      "maxLevel": 300,
       "secondary": false,
       "recipes": [
         {
@@ -60,6 +60,23 @@
               "name": "Volatile Rum",
               "count": 1,
               "itemId": 9260
+            },
+            {
+              "name": "Leaded Vial",
+              "count": 1,
+              "itemId": 3372,
+              "icon": "inv_drink_06"
+            }
+          ]
+        },
+        {
+          "name": "Stonescale Oil",
+          "spellId": 17551,
+          "reagents": [
+            {
+              "name": "Stonescale Eel",
+              "count": 1,
+              "itemId": 13422
             },
             {
               "name": "Leaded Vial",
@@ -156,6 +173,22 @@
               "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
+            }
+          ]
+        },
+        {
+          "name": "Dreamless Sleep Potion",
+          "spellId": 15833,
+          "reagents": [
+            {
+              "name": "Purple Lotus",
+              "count": 3,
+              "itemId": 8831
+            },
+            {
+              "name": "Crystal Vial",
+              "count": 1,
+              "itemId": 8925
             }
           ]
         },
@@ -361,6 +394,30 @@
               "name": "Crystal Vial",
               "count": 1,
               "itemId": 8925
+            }
+          ]
+        },
+        {
+          "name": "Nature Protection Potion",
+          "spellId": 7259,
+          "reagents": [
+            {
+              "name": "Liferoot",
+              "count": 1,
+              "itemId": 3357,
+              "icon": "inv_misc_root_02"
+            },
+            {
+              "name": "Stranglekelp",
+              "count": 1,
+              "itemId": 3820,
+              "icon": "inv_misc_herb_11"
+            },
+            {
+              "name": "Leaded Vial",
+              "count": 1,
+              "itemId": 3372,
+              "icon": "inv_drink_06"
             }
           ]
         },
@@ -670,6 +727,112 @@
               "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
+            }
+          ]
+        },
+        {
+          "name": "Elixir of Greater Defense",
+          "spellId": 17554,
+          "reagents": [
+            {
+              "name": "Stonescale Oil",
+              "count": 2,
+              "itemId": 13423
+            },
+            {
+              "name": "Sungrass",
+              "count": 1,
+              "itemId": 8838
+            },
+            {
+              "name": "Crystal Vial",
+              "count": 1,
+              "itemId": 8925
+            }
+          ]
+        },
+        {
+          "name": "Potion of Demon Slaying",
+          "spellId": 11477,
+          "reagents": [
+            {
+              "name": "Gromsblood",
+              "count": 1,
+              "itemId": 8846
+            },
+            {
+              "name": "Ghost Mushroom",
+              "count": 1,
+              "itemId": 8845
+            },
+            {
+              "name": "Crystal Vial",
+              "count": 1,
+              "itemId": 8925
+            }
+          ]
+        },
+        {
+          "name": "Elixir of Greater Agility",
+          "spellId": 11467,
+          "reagents": [
+            {
+              "name": "Sungrass",
+              "count": 1,
+              "itemId": 8838
+            },
+            {
+              "name": "Goldthorn",
+              "count": 1,
+              "itemId": 3821
+            },
+            {
+              "name": "Crystal Vial",
+              "count": 1,
+              "itemId": 8925
+            }
+          ]
+        },
+        {
+          "name": "Arcane Elixir",
+          "spellId": 11461,
+          "reagents": [
+            {
+              "name": "Blindweed",
+              "count": 1,
+              "itemId": 8839
+            },
+            {
+              "name": "Goldthorn",
+              "count": 1,
+              "itemId": 3821
+            },
+            {
+              "name": "Crystal Vial",
+              "count": 1,
+              "itemId": 8925
+            }
+          ]
+        },
+        {
+          "name": "Elixir of Greater Intellect",
+          "spellId": 11465,
+          "reagents": [
+            {
+              "name": "Blindweed",
+              "count": 1,
+              "itemId": 8839
+            },
+            {
+              "name": "Khadgar's Whisker",
+              "count": 1,
+              "itemId": 3358,
+              "icon": "inv_misc_herb_08"
+            },
+            {
+              "name": "Crystal Vial",
+              "count": 1,
+              "itemId": 8925
             }
           ]
         },
@@ -1132,6 +1295,38 @@
           ]
         },
         {
+          "name": "Draught of Detect Demon",
+          "spellId": 11478,
+          "reagents": [
+            {
+              "name": "Gromsblood",
+              "count": 2,
+              "itemId": 8846
+            },
+            {
+              "name": "Crystal Vial",
+              "count": 1,
+              "itemId": 8925
+            }
+          ]
+        },
+        {
+          "name": "Draught of Detect Undead",
+          "spellId": 11460,
+          "reagents": [
+            {
+              "name": "Arthas' Tears",
+              "count": 1,
+              "itemId": 8836
+            },
+            {
+              "name": "Crystal Vial",
+              "count": 1,
+              "itemId": 8925
+            }
+          ]
+        },
+        {
           "name": "Draught of Greater Water Breathing",
           "spellId": 22808,
           "reagents": [
@@ -1220,6 +1415,54 @@
               "icon": "inv_drink_06"
             }
           ]
+        },
+        {
+          "name": "Truesilver Bar",
+          "spellId": 11480,
+          "reagents": [
+            {
+              "name": "Mithril Bar",
+              "count": 1,
+              "itemId": 3860
+            }
+          ]
+        },
+        {
+          "name": "Gold Bar",
+          "spellId": 11479,
+          "reagents": [
+            {
+              "name": "Iron Bar",
+              "count": 1,
+              "itemId": 3575
+            }
+          ]
+        },
+        {
+          "name": "Philosopher's Stone",
+          "spellId": 11459,
+          "reagents": [
+            {
+              "name": "Iron Bar",
+              "count": 4,
+              "itemId": 3575
+            },
+            {
+              "name": "Black Vitriol",
+              "count": 1,
+              "itemId": 9262
+            },
+            {
+              "name": "Purple Lotus",
+              "count": 4,
+              "itemId": 8831
+            },
+            {
+              "name": "Firebloom",
+              "count": 4,
+              "itemId": 4625
+            }
+          ]
         }
       ]
     }
@@ -1227,39 +1470,41 @@
   "materials": [
     {
       "count": 1,
-      "name": "Arcane Mote",
-      "itemId": 251961
+      "name": "Berylline Pads",
+      "itemId": 4197,
+      "icon": "inv_shoulder_05"
     },
     {
       "count": 3,
-      "name": "Bloodscalp Ear",
-      "itemId": 1519
-    },
-    {
-      "count": 8,
-      "name": "Bloody Bone Necklace",
-      "itemId": 3915
+      "name": "Boar Intestines",
+      "itemId": 3172
     },
     {
       "count": 3,
-      "name": "Bruiseweed",
-      "itemId": 2453,
-      "icon": "inv_misc_herb_01"
+      "name": "Boar Ribs",
+      "itemId": 2677
     },
     {
       "count": 1,
-      "name": "Call of the Raptor",
-      "itemId": 4546
+      "name": "Bottle of Powderfuse Port",
+      "itemId": 274948,
+      "icon": "inv_drink_11"
     },
     {
       "count": 1,
-      "name": "Craftsman's Writ: Star Belt",
-      "itemId": 264109
+      "name": "Briarthorn",
+      "itemId": 2450,
+      "icon": "inv_misc_root_01"
     },
     {
       "count": 1,
-      "name": "Crystal Basilisk Spine",
-      "itemId": 1703
+      "name": "Burning Keystone",
+      "itemId": 259357
+    },
+    {
+      "count": 3,
+      "name": "Catseye Draught",
+      "itemId": 10592
     },
     {
       "count": 18,
@@ -1274,40 +1519,50 @@
     },
     {
       "count": 1,
-      "name": "Earthroot",
-      "itemId": 2449,
-      "icon": "inv_misc_herb_07"
+      "name": "Depleted Crystal Heart",
+      "itemId": 286648
     },
     {
-      "count": 14,
+      "count": 1,
+      "name": "Disengagement Ring",
+      "itemId": 276202,
+      "icon": "inv_jewelry_ring_42"
+    },
+    {
+      "count": 2,
+      "name": "Eastsea Powder Keg",
+      "itemId": 268346
+    },
+    {
+      "count": 33,
       "name": "Empty Vial",
       "itemId": 3371,
       "icon": "inv_drink_06"
     },
     {
-      "count": 12,
+      "count": 13,
+      "name": "Fish Oil",
+      "itemId": 17058
+    },
+    {
+      "count": 1,
+      "name": "Fizzgrimble's Mysterious Crate",
+      "itemId": 276065
+    },
+    {
+      "count": 3,
       "name": "Goldthorn",
       "itemId": 3821
     },
     {
-      "count": 2,
+      "count": 3,
       "name": "Grave Moss",
       "itemId": 3369
     },
     {
-      "count": 1,
-      "name": "Green Hills of Stranglethorn - Page 16",
-      "itemId": 2740
-    },
-    {
-      "count": 1,
-      "name": "Green Hills of Stranglethorn - Page 25",
-      "itemId": 2749
-    },
-    {
-      "count": 1,
-      "name": "Green Hills of Stranglethorn - Page 8",
-      "itemId": 2732
+      "count": 3,
+      "name": "Gromsblood",
+      "itemId": 8846
     },
     {
       "count": 1,
@@ -1316,88 +1571,106 @@
       "icon": "inv_misc_rune_01"
     },
     {
+      "count": 10,
+      "name": "Imbued Vial",
+      "itemId": 18256
+    },
+    {
       "count": 1,
       "name": "Intact Limbs",
       "itemId": 268580,
       "icon": "inv_scroll_03"
     },
     {
-      "count": 10,
-      "name": "Khadgar's Whisker",
-      "itemId": 3358,
-      "icon": "inv_misc_herb_08"
-    },
-    {
-      "count": 15,
+      "count": 16,
       "name": "Kingsblood",
       "itemId": 3356,
       "icon": "inv_misc_herb_03"
     },
     {
-      "count": 2,
-      "name": "Lesser Mana Potion",
-      "itemId": 3385
+      "count": 1,
+      "name": "Kraul Guano",
+      "itemId": 5801
     },
     {
-      "count": 10,
+      "count": 24,
+      "name": "Leaded Vial",
+      "itemId": 3372,
+      "icon": "inv_drink_06"
+    },
+    {
+      "count": 14,
       "name": "Liferoot",
       "itemId": 3357,
       "icon": "inv_misc_root_02"
     },
     {
-      "count": 10,
-      "name": "Mageroyal",
-      "itemId": 785,
-      "icon": "inv_jewelry_talisman_03"
+      "count": 5,
+      "name": "Magic Resistance Potion",
+      "itemId": 9036
     },
     {
-      "count": 19,
+      "count": 18,
       "name": "Maple Seed",
       "itemId": 17034,
       "icon": "inv_misc_food_02"
     },
     {
-      "count": 9,
+      "count": 1,
+      "name": "Mystery Meat",
+      "itemId": 12037
+    },
+    {
+      "count": 1,
+      "name": "Nimboya's Pike",
+      "itemId": 15002
+    },
+    {
+      "count": 1,
       "name": "Raptor Egg",
       "itemId": 3685
     },
     {
-      "count": 3,
-      "name": "Rosecap",
-      "itemId": 249424,
-      "icon": "inv_scroll_03"
+      "count": 7,
+      "name": "Red Wolf Meat",
+      "itemId": 12203
+    },
+    {
+      "count": 4,
+      "name": "Riverglades Marsh Gas",
+      "itemId": 274922
+    },
+    {
+      "count": 4,
+      "name": "Shiny Fish Scales",
+      "itemId": 17057
     },
     {
       "count": 1,
-      "name": "Scroll of Intellect II",
-      "itemId": 2290
+      "name": "Small Scroll",
+      "itemId": 17008
     },
     {
       "count": 1,
-      "name": "Scroll of Strength II",
-      "itemId": 2289
-    },
-    {
-      "count": 2,
-      "name": "Silithid Egg",
-      "itemId": 5058,
-      "icon": "inv_egg_03"
+      "name": "Snake Hoop",
+      "itemId": 6750,
+      "icon": "inv_jewelry_ring_06"
     },
     {
       "count": 1,
-      "name": "Skonk's List",
-      "itemId": 283389
+      "name": "Soft Bushy Tail",
+      "itemId": 4582
     },
     {
-      "count": 8,
+      "count": 1,
       "name": "Stranglekelp",
       "itemId": 3820,
       "icon": "inv_misc_herb_11"
     },
     {
-      "count": 8,
-      "name": "Sweet Nectar",
-      "itemId": 1708
+      "count": 2,
+      "name": "Superior Healing Potion",
+      "itemId": 3928
     },
     {
       "count": 2,
@@ -1406,24 +1679,30 @@
       "icon": "inv_misc_herb_04"
     },
     {
+      "count": 5,
+      "name": "Undermine Clam Chowder",
+      "itemId": 16766
+    },
+    {
       "count": 1,
-      "name": "Toxic Fogger",
-      "itemId": 5638
+      "name": "Untapped Dowsing Widget",
+      "itemId": 8584
     },
     {
-      "count": 2,
-      "name": "Unusual Herb Seeds",
-      "itemId": 268417
-    },
-    {
-      "count": 4,
-      "name": "Wild Hog Shank",
-      "itemId": 3771
+      "count": 14,
+      "name": "Wild Steelbloom",
+      "itemId": 3355,
+      "icon": "inv_misc_flower_01"
     },
     {
       "count": 1,
       "name": "Witherbark Mallet",
       "itemId": 216483
+    },
+    {
+      "count": 1,
+      "name": "Yeh'kinya's Bramble",
+      "itemId": 10699
     }
   ],
   "professionSkill": {
@@ -1432,12 +1711,12 @@
       "level": 8
     },
     "Alchemy": {
-      "maxLevel": 225,
-      "level": 225
+      "maxLevel": 300,
+      "level": 269
     },
     "Herbalism": {
       "maxLevel": 300,
-      "level": 222
+      "level": 255
     },
     "First Aid": {
       "maxLevel": 75,
