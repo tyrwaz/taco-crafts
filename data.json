@@ -14,1452 +14,1452 @@
       "secondary": false,
       "recipes": [
         {
-          "spellId": 1230564,
           "name": "Mana Well",
+          "spellId": 1230564,
           "reagents": [
             {
-              "count": 1,
               "name": "Peacebloom",
+              "count": 1,
               "itemId": 2447,
               "icon": "inv_misc_flower_02"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 1249632,
           "name": "Viridian Dye",
+          "spellId": 1249632,
           "reagents": [
             {
-              "count": 2,
               "name": "Stranglevine",
+              "count": 2,
               "itemId": 249274
             },
             {
-              "count": 1,
               "name": "Crystal Vial",
+              "count": 1,
               "itemId": 8925
             }
           ]
         },
         {
-          "spellId": 11456,
           "name": "Goblin Rocket Fuel",
+          "spellId": 11456,
           "reagents": [
             {
-              "count": 1,
               "name": "Firebloom",
+              "count": 1,
               "itemId": 4625
             },
             {
-              "count": 1,
               "name": "Volatile Rum",
+              "count": 1,
               "itemId": 9260
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 17551,
           "name": "Stonescale Oil",
+          "spellId": 17551,
           "reagents": [
             {
-              "count": 1,
               "name": "Stonescale Eel",
+              "count": 1,
               "itemId": 13422
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 7837,
           "name": "Fire Oil",
+          "spellId": 7837,
           "reagents": [
             {
-              "count": 2,
               "name": "Firefin Snapper",
+              "count": 2,
               "itemId": 6359,
               "icon": "inv_misc_monsterhead_01"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 1249631,
           "name": "Magenta Dye",
+          "spellId": 1249631,
           "reagents": [
             {
-              "count": 2,
               "name": "Rosecap",
+              "count": 2,
               "itemId": 249424,
               "icon": "inv_scroll_03"
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 7836,
           "name": "Blackmouth Oil",
+          "spellId": 7836,
           "reagents": [
             {
-              "count": 2,
               "name": "Oily Blackmouth",
+              "count": 2,
               "itemId": 6358,
               "icon": "inv_misc_monsterhead_04"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 1249630,
           "name": "Cerulean Dye",
+          "spellId": 1249630,
           "reagents": [
             {
-              "count": 2,
               "name": "Frilled Lichen",
+              "count": 2,
               "itemId": 249399,
               "icon": "inv_scroll_03"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 1249633,
           "name": "Sulfuric Acid",
+          "spellId": 1249633,
           "reagents": [
             {
-              "count": 2,
               "name": "Pyrite",
+              "count": 2,
               "itemId": 249391,
               "icon": "inv_scroll_03"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 15833,
           "name": "Dreamless Sleep Potion",
+          "spellId": 15833,
           "reagents": [
             {
-              "count": 3,
               "name": "Purple Lotus",
+              "count": 3,
               "itemId": 8831
             },
             {
-              "count": 1,
               "name": "Crystal Vial",
+              "count": 1,
               "itemId": 8925
             }
           ]
         },
         {
-          "spellId": 11448,
           "name": "Greater Mana Potion",
+          "spellId": 11448,
           "reagents": [
             {
-              "count": 1,
               "name": "Khadgar's Whisker",
+              "count": 1,
               "itemId": 3358,
               "icon": "inv_misc_herb_08"
             },
             {
-              "count": 1,
               "name": "Goldthorn",
+              "count": 1,
               "itemId": 3821
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 11458,
           "name": "Wildvine Potion",
+          "spellId": 11458,
           "reagents": [
             {
-              "count": 1,
               "name": "Wildvine",
+              "count": 1,
               "itemId": 8153
             },
             {
-              "count": 1,
               "name": "Purple Lotus",
+              "count": 1,
               "itemId": 8831
             },
             {
-              "count": 1,
               "name": "Crystal Vial",
+              "count": 1,
               "itemId": 8925
             }
           ]
         },
         {
-          "spellId": 3452,
           "name": "Mana Potion",
+          "spellId": 3452,
           "reagents": [
             {
-              "count": 1,
               "name": "Stranglekelp",
+              "count": 1,
               "itemId": 3820,
               "icon": "inv_misc_herb_11"
             },
             {
-              "count": 1,
               "name": "Kingsblood",
+              "count": 1,
               "itemId": 3356,
               "icon": "inv_misc_herb_03"
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 3173,
           "name": "Lesser Mana Potion",
+          "spellId": 3173,
           "reagents": [
             {
-              "count": 1,
               "name": "Mageroyal",
+              "count": 1,
               "itemId": 785,
               "icon": "inv_jewelry_talisman_03"
             },
             {
-              "count": 1,
               "name": "Stranglekelp",
+              "count": 1,
               "itemId": 3820,
               "icon": "inv_misc_herb_11"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 2332,
           "name": "Minor Rejuvenation Potion",
+          "spellId": 2332,
           "reagents": [
             {
+              "name": "Mageroyal",
               "count": 2,
-              "name": "Mageroyal",
               "itemId": 785,
               "icon": "inv_jewelry_talisman_03"
             },
             {
-              "count": 1,
               "name": "Peacebloom",
+              "count": 1,
               "itemId": 2447,
               "icon": "inv_misc_flower_02"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 2331,
           "name": "Minor Mana Potion",
+          "spellId": 2331,
           "reagents": [
             {
-              "count": 1,
               "name": "Mageroyal",
+              "count": 1,
               "itemId": 785,
               "icon": "inv_jewelry_talisman_03"
             },
             {
-              "count": 1,
               "name": "Peacebloom",
+              "count": 1,
               "itemId": 2447,
               "icon": "inv_misc_flower_02"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 4942,
           "name": "Lesser Stoneshield Potion",
+          "spellId": 4942,
           "reagents": [
             {
-              "count": 1,
               "name": "Mithril Ore",
+              "count": 1,
               "itemId": 3858
             },
             {
-              "count": 1,
               "name": "Goldthorn",
+              "count": 1,
               "itemId": 3821
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 11453,
           "name": "Magic Resistance Potion",
+          "spellId": 11453,
           "reagents": [
             {
-              "count": 1,
               "name": "Khadgar's Whisker",
+              "count": 1,
               "itemId": 3358,
               "icon": "inv_misc_herb_08"
             },
             {
-              "count": 1,
               "name": "Purple Lotus",
+              "count": 1,
               "itemId": 8831
             },
             {
-              "count": 1,
               "name": "Crystal Vial",
+              "count": 1,
               "itemId": 8925
             }
           ]
         },
         {
-          "spellId": 11451,
           "name": "Oil of Immolation",
+          "spellId": 11451,
           "reagents": [
             {
-              "count": 1,
               "name": "Firebloom",
+              "count": 1,
               "itemId": 4625
             },
             {
-              "count": 1,
               "name": "Goldthorn",
+              "count": 1,
               "itemId": 3821
             },
             {
-              "count": 1,
               "name": "Crystal Vial",
+              "count": 1,
               "itemId": 8925
             }
           ]
         },
         {
-          "spellId": 7259,
           "name": "Nature Protection Potion",
+          "spellId": 7259,
           "reagents": [
             {
-              "count": 1,
               "name": "Liferoot",
+              "count": 1,
               "itemId": 3357,
               "icon": "inv_misc_root_02"
             },
             {
-              "count": 1,
               "name": "Stranglekelp",
+              "count": 1,
               "itemId": 3820,
               "icon": "inv_misc_herb_11"
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 3448,
           "name": "Lesser Invisibility Potion",
+          "spellId": 3448,
           "reagents": [
             {
-              "count": 1,
               "name": "Fadeleaf",
+              "count": 1,
               "itemId": 3818
             },
             {
-              "count": 1,
               "name": "Wild Steelbloom",
+              "count": 1,
               "itemId": 3355,
               "icon": "inv_misc_flower_01"
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 6624,
           "name": "Free Action Potion",
+          "spellId": 6624,
           "reagents": [
             {
-              "count": 2,
               "name": "Blackmouth Oil",
+              "count": 2,
               "itemId": 6370,
               "icon": "inv_drink_12"
             },
             {
-              "count": 1,
               "name": "Stranglekelp",
+              "count": 1,
               "itemId": 3820,
               "icon": "inv_misc_herb_11"
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 7256,
           "name": "Shadow Protection Potion",
+          "spellId": 7256,
           "reagents": [
             {
-              "count": 1,
               "name": "Grave Moss",
+              "count": 1,
               "itemId": 3369
             },
             {
-              "count": 1,
               "name": "Kingsblood",
+              "count": 1,
               "itemId": 3356,
               "icon": "inv_misc_herb_03"
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 3172,
           "name": "Minor Magic Resistance Potion",
+          "spellId": 3172,
           "reagents": [
             {
-              "count": 3,
               "name": "Mageroyal",
+              "count": 3,
               "itemId": 785,
               "icon": "inv_jewelry_talisman_03"
             },
             {
-              "count": 1,
               "name": "Wild Steelbloom",
+              "count": 1,
               "itemId": 3355,
               "icon": "inv_misc_flower_01"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 7255,
           "name": "Holy Protection Potion",
+          "spellId": 7255,
           "reagents": [
             {
-              "count": 1,
               "name": "Bruiseweed",
+              "count": 1,
               "itemId": 2453,
               "icon": "inv_misc_herb_01"
             },
             {
-              "count": 1,
               "name": "Swiftthistle",
+              "count": 1,
               "itemId": 2452,
               "icon": "inv_misc_herb_04"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 7841,
           "name": "Swim Speed Potion",
+          "spellId": 7841,
           "reagents": [
             {
-              "count": 1,
               "name": "Swiftthistle",
+              "count": 1,
               "itemId": 2452,
               "icon": "inv_misc_herb_04"
             },
             {
-              "count": 1,
               "name": "Blackmouth Oil",
+              "count": 1,
               "itemId": 6370,
               "icon": "inv_drink_12"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 1251737,
           "name": "Frenzy Potion",
+          "spellId": 1251737,
           "reagents": [
             {
-              "count": 2,
               "name": "Fadeleaf",
+              "count": 2,
               "itemId": 3818
             },
             {
-              "count": 2,
               "name": "Briarthorn",
+              "count": 2,
               "itemId": 2450,
               "icon": "inv_misc_root_01"
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 2335,
           "name": "Swiftness Potion",
+          "spellId": 2335,
           "reagents": [
             {
-              "count": 1,
               "name": "Swiftthistle",
+              "count": 1,
               "itemId": 2452,
               "icon": "inv_misc_herb_04"
             },
             {
-              "count": 1,
               "name": "Briarthorn",
+              "count": 1,
               "itemId": 2450,
               "icon": "inv_misc_root_01"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 6617,
           "name": "Rage Potion",
+          "spellId": 6617,
           "reagents": [
             {
-              "count": 1,
               "name": "Sharp Claw",
+              "count": 1,
               "itemId": 5635,
               "icon": "inv_misc_monsterclaw_03"
             },
             {
-              "count": 1,
               "name": "Briarthorn",
+              "count": 1,
               "itemId": 2450,
               "icon": "inv_misc_root_01"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 1251736,
           "name": "Lesser Frenzy Potion",
+          "spellId": 1251736,
           "reagents": [
             {
-              "count": 1,
               "name": "Briarthorn",
+              "count": 1,
               "itemId": 2450,
               "icon": "inv_misc_root_01"
             },
             {
-              "count": 2,
               "name": "Earthroot",
+              "count": 2,
               "itemId": 2449,
               "icon": "inv_misc_herb_07"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 1251730,
           "name": "Lesser Spellblasting Potion",
+          "spellId": 1251730,
           "reagents": [
             {
-              "count": 1,
               "name": "Mageroyal",
+              "count": 1,
               "itemId": 785,
               "icon": "inv_jewelry_talisman_03"
             },
             {
-              "count": 2,
               "name": "Silverleaf",
+              "count": 2,
               "itemId": 765,
               "icon": "inv_misc_herb_10"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 1251742,
           "name": "Lesser Mender's Potion",
+          "spellId": 1251742,
           "reagents": [
             {
-              "count": 2,
               "name": "Kingsblood",
+              "count": 2,
               "itemId": 3356,
               "icon": "inv_misc_herb_03"
             },
             {
-              "count": 2,
               "name": "Liferoot",
+              "count": 2,
               "itemId": 3357,
               "icon": "inv_misc_root_02"
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 1251729,
           "name": "Minor Spellblasting Potion",
+          "spellId": 1251729,
           "reagents": [
             {
-              "count": 1,
               "name": "Silverleaf",
+              "count": 1,
               "itemId": 765,
               "icon": "inv_misc_herb_10"
             },
             {
-              "count": 1,
               "name": "Peacebloom",
+              "count": 1,
               "itemId": 2447,
               "icon": "inv_misc_flower_02"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 17554,
           "name": "Elixir of Greater Defense",
+          "spellId": 17554,
           "reagents": [
             {
-              "count": 2,
               "name": "Stonescale Oil",
+              "count": 2,
               "itemId": 13423
             },
             {
-              "count": 1,
               "name": "Sungrass",
+              "count": 1,
               "itemId": 8838
             },
             {
-              "count": 1,
               "name": "Crystal Vial",
+              "count": 1,
               "itemId": 8925
             }
           ]
         },
         {
-          "spellId": 11477,
           "name": "Potion of Demon Slaying",
+          "spellId": 11477,
           "reagents": [
             {
-              "count": 1,
               "name": "Gromsblood",
+              "count": 1,
               "itemId": 8846
             },
             {
-              "count": 1,
               "name": "Ghost Mushroom",
+              "count": 1,
               "itemId": 8845
             },
             {
-              "count": 1,
               "name": "Crystal Vial",
+              "count": 1,
               "itemId": 8925
             }
           ]
         },
         {
-          "spellId": 11467,
           "name": "Elixir of Greater Agility",
+          "spellId": 11467,
           "reagents": [
             {
-              "count": 1,
               "name": "Sungrass",
+              "count": 1,
               "itemId": 8838
             },
             {
-              "count": 1,
               "name": "Goldthorn",
+              "count": 1,
               "itemId": 3821
             },
             {
-              "count": 1,
               "name": "Crystal Vial",
+              "count": 1,
               "itemId": 8925
             }
           ]
         },
         {
-          "spellId": 11461,
           "name": "Arcane Elixir",
+          "spellId": 11461,
           "reagents": [
             {
-              "count": 1,
               "name": "Blindweed",
+              "count": 1,
               "itemId": 8839
             },
             {
-              "count": 1,
               "name": "Goldthorn",
+              "count": 1,
               "itemId": 3821
             },
             {
-              "count": 1,
               "name": "Crystal Vial",
+              "count": 1,
               "itemId": 8925
             }
           ]
         },
         {
-          "spellId": 11465,
           "name": "Elixir of Greater Intellect",
+          "spellId": 11465,
           "reagents": [
             {
-              "count": 1,
               "name": "Blindweed",
+              "count": 1,
               "itemId": 8839
             },
             {
-              "count": 1,
               "name": "Khadgar's Whisker",
+              "count": 1,
               "itemId": 3358,
               "icon": "inv_misc_herb_08"
             },
             {
-              "count": 1,
               "name": "Crystal Vial",
+              "count": 1,
               "itemId": 8925
             }
           ]
         },
         {
-          "spellId": 11450,
           "name": "Elixir of Defense",
+          "spellId": 11450,
           "reagents": [
             {
-              "count": 1,
               "name": "Wild Steelbloom",
+              "count": 1,
               "itemId": 3355,
               "icon": "inv_misc_flower_01"
             },
             {
-              "count": 1,
               "name": "Goldthorn",
+              "count": 1,
               "itemId": 3821
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 11449,
           "name": "Elixir of Agility",
+          "spellId": 11449,
           "reagents": [
             {
-              "count": 1,
               "name": "Stranglekelp",
+              "count": 1,
               "itemId": 3820,
               "icon": "inv_misc_herb_11"
             },
             {
-              "count": 1,
               "name": "Goldthorn",
+              "count": 1,
               "itemId": 3821
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 3450,
           "name": "Elixir of Lesser Fortitude",
+          "spellId": 3450,
           "reagents": [
             {
-              "count": 1,
               "name": "Wild Steelbloom",
+              "count": 1,
               "itemId": 3355,
               "icon": "inv_misc_flower_01"
             },
             {
-              "count": 1,
               "name": "Goldthorn",
+              "count": 1,
               "itemId": 3821
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 3188,
           "name": "Elixir of Ogre Strength",
+          "spellId": 3188,
           "reagents": [
             {
-              "count": 1,
               "name": "Earthroot",
+              "count": 1,
               "itemId": 2449,
               "icon": "inv_misc_herb_07"
             },
             {
-              "count": 1,
               "name": "Kingsblood",
+              "count": 1,
               "itemId": 3356,
               "icon": "inv_misc_herb_03"
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 7845,
           "name": "Elixir of Fire Power",
+          "spellId": 7845,
           "reagents": [
             {
-              "count": 2,
               "name": "Fire Oil",
+              "count": 2,
               "itemId": 6371
             },
             {
-              "count": 1,
               "name": "Kingsblood",
+              "count": 1,
               "itemId": 3356,
               "icon": "inv_misc_herb_03"
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 3177,
           "name": "Elixir of Lesser Defense",
+          "spellId": 3177,
           "reagents": [
             {
-              "count": 1,
               "name": "Wild Steelbloom",
+              "count": 1,
               "itemId": 3355,
               "icon": "inv_misc_flower_01"
             },
             {
-              "count": 1,
               "name": "Stranglekelp",
+              "count": 1,
               "itemId": 3820,
               "icon": "inv_misc_herb_11"
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 3176,
           "name": "Lesser Troll's Blood Elixir",
+          "spellId": 3176,
           "reagents": [
             {
-              "count": 2,
               "name": "Bruiseweed",
+              "count": 2,
               "itemId": 2453,
               "icon": "inv_misc_herb_01"
             },
             {
-              "count": 2,
               "name": "Briarthorn",
+              "count": 2,
               "itemId": 2450,
               "icon": "inv_misc_root_01"
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 3171,
           "name": "Elixir of Wisdom",
+          "spellId": 3171,
           "reagents": [
             {
-              "count": 1,
               "name": "Mageroyal",
+              "count": 1,
               "itemId": 785,
               "icon": "inv_jewelry_talisman_03"
             },
             {
-              "count": 2,
               "name": "Briarthorn",
+              "count": 2,
               "itemId": 2450,
               "icon": "inv_misc_root_01"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 8240,
           "name": "Elixir of Giant Growth",
+          "spellId": 8240,
           "reagents": [
             {
-              "count": 1,
               "name": "Deviate Fish",
+              "count": 1,
               "itemId": 6522,
               "icon": "inv_misc_monsterhead_01"
             },
             {
-              "count": 1,
               "name": "Earthroot",
+              "count": 1,
               "itemId": 2449,
               "icon": "inv_misc_herb_07"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 1250795,
           "name": "Elixir of Spirit",
+          "spellId": 1250795,
           "reagents": [
             {
-              "count": 3,
               "name": "Khadgar's Whisker",
+              "count": 3,
               "itemId": 3358,
               "icon": "inv_misc_herb_08"
             },
             {
-              "count": 1,
               "name": "Kingsblood",
+              "count": 1,
               "itemId": 3356,
               "icon": "inv_misc_herb_03"
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 3230,
           "name": "Elixir of Minor Agility",
+          "spellId": 3230,
           "reagents": [
             {
-              "count": 1,
               "name": "Swiftthistle",
+              "count": 1,
               "itemId": 2452,
               "icon": "inv_misc_herb_04"
             },
             {
-              "count": 1,
               "name": "Silverleaf",
+              "count": 1,
               "itemId": 765,
               "icon": "inv_misc_herb_10"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 2334,
           "name": "Elixir of Minor Fortitude",
+          "spellId": 2334,
           "reagents": [
             {
-              "count": 2,
               "name": "Earthroot",
+              "count": 2,
               "itemId": 2449,
               "icon": "inv_misc_herb_07"
             },
             {
-              "count": 1,
               "name": "Peacebloom",
+              "count": 1,
               "itemId": 2447,
               "icon": "inv_misc_flower_02"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 3170,
           "name": "Minor Troll's Blood Elixir",
+          "spellId": 3170,
           "reagents": [
             {
-              "count": 1,
               "name": "Peacebloom",
+              "count": 1,
               "itemId": 2447,
               "icon": "inv_misc_flower_02"
             },
             {
+              "name": "Earthroot",
               "count": 2,
-              "name": "Earthroot",
               "itemId": 2449,
               "icon": "inv_misc_herb_07"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 7183,
           "name": "Elixir of Minor Defense",
+          "spellId": 7183,
           "reagents": [
             {
-              "count": 1,
               "name": "Silverleaf",
+              "count": 1,
               "itemId": 765,
               "icon": "inv_misc_herb_10"
             },
             {
-              "count": 1,
               "name": "Peacebloom",
+              "count": 1,
               "itemId": 2447,
               "icon": "inv_misc_flower_02"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 2329,
           "name": "Elixir of Minor Strength",
+          "spellId": 2329,
           "reagents": [
             {
-              "count": 1,
               "name": "Earthroot",
+              "count": 1,
               "itemId": 2449,
               "icon": "inv_misc_herb_07"
             },
             {
-              "count": 1,
               "name": "Silverleaf",
+              "count": 1,
               "itemId": 765,
               "icon": "inv_misc_herb_10"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 1250789,
           "name": "Lesser Mageblood Elixir",
+          "spellId": 1250789,
           "reagents": [
             {
-              "count": 3,
               "name": "Kingsblood",
+              "count": 3,
               "itemId": 3356,
               "icon": "inv_misc_herb_03"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 1250779,
           "name": "Minor Cleric's Elixir",
+          "spellId": 1250779,
           "reagents": [
             {
-              "count": 2,
               "name": "Mageroyal",
+              "count": 2,
               "itemId": 785,
               "icon": "inv_jewelry_talisman_03"
             },
             {
-              "count": 1,
               "name": "Bruiseweed",
+              "count": 1,
               "itemId": 2453,
               "icon": "inv_misc_herb_01"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 1250793,
           "name": "Elixir of Minor Spirit",
+          "spellId": 1250793,
           "reagents": [
             {
-              "count": 2,
               "name": "Earthroot",
+              "count": 2,
               "itemId": 2449,
               "icon": "inv_misc_herb_07"
             },
             {
-              "count": 1,
               "name": "Peacebloom",
+              "count": 1,
               "itemId": 2447,
               "icon": "inv_misc_flower_02"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 1245250,
           "name": "Elixir of Minor Force",
+          "spellId": 1245250,
           "reagents": [
             {
-              "count": 1,
               "name": "Silverleaf",
+              "count": 1,
               "itemId": 765,
               "icon": "inv_misc_herb_10"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 1245246,
           "name": "Minor Arcane Elixir",
+          "spellId": 1245246,
           "reagents": [
             {
-              "count": 1,
               "name": "Peacebloom",
+              "count": 1,
               "itemId": 2447,
               "icon": "inv_misc_flower_02"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 11478,
           "name": "Draught of Detect Demon",
+          "spellId": 11478,
           "reagents": [
             {
-              "count": 2,
               "name": "Gromsblood",
+              "count": 2,
               "itemId": 8846
             },
             {
-              "count": 1,
               "name": "Crystal Vial",
+              "count": 1,
               "itemId": 8925
             }
           ]
         },
         {
-          "spellId": 11460,
           "name": "Draught of Detect Undead",
+          "spellId": 11460,
           "reagents": [
             {
-              "count": 1,
               "name": "Arthas' Tears",
+              "count": 1,
               "itemId": 8836
             },
             {
-              "count": 1,
               "name": "Crystal Vial",
+              "count": 1,
               "itemId": 8925
             }
           ]
         },
         {
-          "spellId": 22808,
           "name": "Draught of Greater Water Breathing",
+          "spellId": 22808,
           "reagents": [
             {
-              "count": 1,
               "name": "Ichor of Undeath",
+              "count": 1,
               "itemId": 7972
             },
             {
-              "count": 2,
               "name": "Purple Lotus",
+              "count": 2,
               "itemId": 8831
             },
             {
-              "count": 1,
               "name": "Crystal Vial",
+              "count": 1,
               "itemId": 8925
             }
           ]
         },
         {
-          "spellId": 12609,
           "name": "Catseye Draught",
+          "spellId": 12609,
           "reagents": [
             {
-              "count": 1,
               "name": "Goldthorn",
+              "count": 1,
               "itemId": 3821
             },
             {
-              "count": 1,
               "name": "Fadeleaf",
+              "count": 1,
               "itemId": 3818
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 3453,
           "name": "Draught of Detect Lesser Invisibility",
+          "spellId": 3453,
           "reagents": [
             {
-              "count": 1,
               "name": "Khadgar's Whisker",
+              "count": 1,
               "itemId": 3358,
               "icon": "inv_misc_herb_08"
             },
             {
-              "count": 1,
               "name": "Fadeleaf",
+              "count": 1,
               "itemId": 3818
             },
             {
-              "count": 1,
               "name": "Leaded Vial",
+              "count": 1,
               "itemId": 3372,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 7179,
           "name": "Draught of Water Breathing",
+          "spellId": 7179,
           "reagents": [
             {
-              "count": 1,
               "name": "Stranglekelp",
+              "count": 1,
               "itemId": 3820,
               "icon": "inv_misc_herb_11"
             },
             {
-              "count": 2,
               "name": "Blackmouth Oil",
+              "count": 2,
               "itemId": 6370,
               "icon": "inv_drink_12"
             },
             {
-              "count": 1,
               "name": "Empty Vial",
+              "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
             }
           ]
         },
         {
-          "spellId": 11480,
           "name": "Truesilver Bar",
+          "spellId": 11480,
           "reagents": [
             {
-              "count": 1,
               "name": "Mithril Bar",
+              "count": 1,
               "itemId": 3860
             }
           ]
         },
         {
-          "spellId": 11479,
           "name": "Gold Bar",
+          "spellId": 11479,
           "reagents": [
             {
-              "count": 1,
               "name": "Iron Bar",
+              "count": 1,
               "itemId": 3575
             }
           ]
         },
         {
-          "spellId": 11459,
           "name": "Philosopher's Stone",
+          "spellId": 11459,
           "reagents": [
             {
-              "count": 4,
               "name": "Iron Bar",
+              "count": 4,
               "itemId": 3575
             },
             {
-              "count": 1,
               "name": "Black Vitriol",
+              "count": 1,
               "itemId": 9262
             },
             {
-              "count": 4,
               "name": "Purple Lotus",
+              "count": 4,
               "itemId": 8831
             },
             {
-              "count": 4,
               "name": "Firebloom",
+              "count": 4,
               "itemId": 4625
             }
           ]
@@ -1469,239 +1469,239 @@
   ],
   "materials": [
     {
-      "name": "Berylline Pads",
       "count": 1,
+      "name": "Berylline Pads",
       "itemId": 4197,
       "icon": "inv_shoulder_05"
     },
     {
-      "name": "Boar Intestines",
       "count": 3,
+      "name": "Boar Intestines",
       "itemId": 3172
     },
     {
-      "name": "Boar Ribs",
       "count": 3,
+      "name": "Boar Ribs",
       "itemId": 2677
     },
     {
-      "name": "Bottle of Powderfuse Port",
       "count": 1,
+      "name": "Bottle of Powderfuse Port",
       "itemId": 274948,
       "icon": "inv_drink_11"
     },
     {
-      "name": "Briarthorn",
       "count": 1,
+      "name": "Briarthorn",
       "itemId": 2450,
       "icon": "inv_misc_root_01"
     },
     {
-      "name": "Burning Keystone",
       "count": 1,
+      "name": "Burning Keystone",
       "itemId": 259357
     },
     {
-      "name": "Catseye Draught",
       "count": 3,
+      "name": "Catseye Draught",
       "itemId": 10592
     },
     {
-      "name": "Crystal Vial",
       "count": 18,
+      "name": "Crystal Vial",
       "itemId": 8925
     },
     {
-      "name": "Deepmoss Egg",
       "count": 1,
+      "name": "Deepmoss Egg",
       "itemId": 5570,
       "icon": "inv_egg_03"
     },
     {
-      "name": "Depleted Crystal Heart",
       "count": 1,
+      "name": "Depleted Crystal Heart",
       "itemId": 286648
     },
     {
-      "name": "Disengagement Ring",
       "count": 1,
+      "name": "Disengagement Ring",
       "itemId": 276202,
       "icon": "inv_jewelry_ring_42"
     },
     {
-      "name": "Eastsea Powder Keg",
       "count": 2,
+      "name": "Eastsea Powder Keg",
       "itemId": 268346
     },
     {
-      "name": "Empty Vial",
       "count": 33,
+      "name": "Empty Vial",
       "itemId": 3371,
       "icon": "inv_drink_06"
     },
     {
-      "name": "Fish Oil",
       "count": 13,
+      "name": "Fish Oil",
       "itemId": 17058
     },
     {
-      "name": "Fizzgrimble's Mysterious Crate",
       "count": 1,
+      "name": "Fizzgrimble's Mysterious Crate",
       "itemId": 276065
     },
     {
-      "name": "Goldthorn",
       "count": 3,
+      "name": "Goldthorn",
       "itemId": 3821
     },
     {
-      "name": "Grave Moss",
       "count": 3,
+      "name": "Grave Moss",
       "itemId": 3369
     },
     {
-      "name": "Gromsblood",
       "count": 3,
+      "name": "Gromsblood",
       "itemId": 8846
     },
     {
-      "name": "Hearthstone",
       "count": 1,
+      "name": "Hearthstone",
       "itemId": 6948,
       "icon": "inv_misc_rune_01"
     },
     {
-      "name": "Imbued Vial",
       "count": 10,
+      "name": "Imbued Vial",
       "itemId": 18256
     },
     {
-      "name": "Intact Limbs",
       "count": 1,
+      "name": "Intact Limbs",
       "itemId": 268580,
       "icon": "inv_scroll_03"
     },
     {
-      "name": "Kingsblood",
       "count": 16,
+      "name": "Kingsblood",
       "itemId": 3356,
       "icon": "inv_misc_herb_03"
     },
     {
-      "name": "Kraul Guano",
       "count": 1,
+      "name": "Kraul Guano",
       "itemId": 5801
     },
     {
-      "name": "Leaded Vial",
       "count": 24,
+      "name": "Leaded Vial",
       "itemId": 3372,
       "icon": "inv_drink_06"
     },
     {
-      "name": "Liferoot",
       "count": 14,
+      "name": "Liferoot",
       "itemId": 3357,
       "icon": "inv_misc_root_02"
     },
     {
-      "name": "Magic Resistance Potion",
       "count": 5,
+      "name": "Magic Resistance Potion",
       "itemId": 9036
     },
     {
-      "name": "Maple Seed",
       "count": 18,
+      "name": "Maple Seed",
       "itemId": 17034,
       "icon": "inv_misc_food_02"
     },
     {
-      "name": "Mystery Meat",
       "count": 1,
+      "name": "Mystery Meat",
       "itemId": 12037
     },
     {
-      "name": "Nimboya's Pike",
       "count": 1,
+      "name": "Nimboya's Pike",
       "itemId": 15002
     },
     {
-      "name": "Raptor Egg",
       "count": 1,
+      "name": "Raptor Egg",
       "itemId": 3685
     },
     {
-      "name": "Red Wolf Meat",
       "count": 7,
+      "name": "Red Wolf Meat",
       "itemId": 12203
     },
     {
-      "name": "Riverglades Marsh Gas",
       "count": 4,
+      "name": "Riverglades Marsh Gas",
       "itemId": 274922
     },
     {
-      "name": "Shiny Fish Scales",
       "count": 4,
+      "name": "Shiny Fish Scales",
       "itemId": 17057
     },
     {
-      "name": "Small Scroll",
       "count": 1,
+      "name": "Small Scroll",
       "itemId": 17008
     },
     {
-      "name": "Snake Hoop",
       "count": 1,
+      "name": "Snake Hoop",
       "itemId": 6750,
       "icon": "inv_jewelry_ring_06"
     },
     {
-      "name": "Soft Bushy Tail",
       "count": 1,
+      "name": "Soft Bushy Tail",
       "itemId": 4582
     },
     {
-      "name": "Stranglekelp",
       "count": 1,
+      "name": "Stranglekelp",
       "itemId": 3820,
       "icon": "inv_misc_herb_11"
     },
     {
-      "name": "Superior Healing Potion",
       "count": 2,
+      "name": "Superior Healing Potion",
       "itemId": 3928
     },
     {
-      "name": "Swiftthistle",
       "count": 2,
+      "name": "Swiftthistle",
       "itemId": 2452,
       "icon": "inv_misc_herb_04"
     },
     {
-      "name": "Undermine Clam Chowder",
       "count": 5,
+      "name": "Undermine Clam Chowder",
       "itemId": 16766
     },
     {
-      "name": "Untapped Dowsing Widget",
       "count": 1,
+      "name": "Untapped Dowsing Widget",
       "itemId": 8584
     },
     {
-      "name": "Wild Steelbloom",
       "count": 14,
+      "name": "Wild Steelbloom",
       "itemId": 3355,
       "icon": "inv_misc_flower_01"
     },
     {
-      "name": "Witherbark Mallet",
       "count": 1,
+      "name": "Witherbark Mallet",
       "itemId": 216483
     },
     {
-      "name": "Yeh'kinya's Bramble",
       "count": 1,
+      "name": "Yeh'kinya's Bramble",
       "itemId": 10699
     }
   ],
@@ -1714,17 +1714,17 @@
       "maxLevel": 300,
       "level": 269
     },
-    "Fishing": {
-      "maxLevel": 75,
-      "level": 1
+    "Herbalism": {
+      "maxLevel": 300,
+      "level": 255
     },
     "First Aid": {
       "maxLevel": 75,
       "level": 25
     },
-    "Herbalism": {
-      "maxLevel": 300,
-      "level": 255
+    "Fishing": {
+      "maxLevel": 75,
+      "level": 1
     }
   },
   "_source": "C:\\Program Files (x86)\\World of Warcraft\\_forever_\\WTF\\Account\\TIFFANY1121\\91\\Kinato-Tyrnth\\SavedVariables\\TacoCrafts.lua"
