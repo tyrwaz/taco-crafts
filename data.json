@@ -4,7 +4,7 @@
   "realm": "",
   "faction": "Horde",
   "classKey": "DRUID",
-  "updated": 1795239282,
+  "updated": 1795386637,
   "professions": [
     {
       "name": "Alchemy",
@@ -28,6 +28,27 @@
               "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
+            }
+          ]
+        },
+        {
+          "name": "Ghost Dye",
+          "spellId": 11473,
+          "reagents": [
+            {
+              "name": "Ghost Mushroom",
+              "count": 2,
+              "itemId": 8845
+            },
+            {
+              "name": "Purple Dye",
+              "count": 1,
+              "itemId": 4342
+            },
+            {
+              "name": "Crystal Vial",
+              "count": 1,
+              "itemId": 8925
             }
           ]
         },
@@ -173,6 +194,27 @@
               "count": 1,
               "itemId": 3371,
               "icon": "inv_drink_06"
+            }
+          ]
+        },
+        {
+          "name": "Superior Mana Potion",
+          "spellId": 17553,
+          "reagents": [
+            {
+              "name": "Sungrass",
+              "count": 2,
+              "itemId": 8838
+            },
+            {
+              "name": "Blindweed",
+              "count": 2,
+              "itemId": 8839
+            },
+            {
+              "name": "Crystal Vial",
+              "count": 1,
+              "itemId": 8925
             }
           ]
         },
@@ -743,6 +785,22 @@
               "name": "Sungrass",
               "count": 1,
               "itemId": 8838
+            },
+            {
+              "name": "Crystal Vial",
+              "count": 1,
+              "itemId": 8925
+            }
+          ]
+        },
+        {
+          "name": "Elixir of Shadow Power",
+          "spellId": 11476,
+          "reagents": [
+            {
+              "name": "Ghost Mushroom",
+              "count": 3,
+              "itemId": 8845
             },
             {
               "name": "Crystal Vial",
@@ -1476,93 +1534,40 @@
     },
     {
       "count": 3,
-      "name": "Boar Intestines",
-      "itemId": 3172
-    },
-    {
-      "count": 3,
       "name": "Boar Ribs",
       "itemId": 2677
     },
     {
       "count": 1,
-      "name": "Bottle of Powderfuse Port",
-      "itemId": 274948,
-      "icon": "inv_drink_11"
+      "name": "Cloak of the Cult",
+      "itemId": 275050,
+      "icon": "inv_misc_cape_22"
     },
     {
       "count": 1,
-      "name": "Briarthorn",
-      "itemId": 2450,
-      "icon": "inv_misc_root_01"
-    },
-    {
-      "count": 1,
-      "name": "Burning Keystone",
-      "itemId": 259357
-    },
-    {
-      "count": 3,
-      "name": "Catseye Draught",
-      "itemId": 10592
-    },
-    {
-      "count": 18,
-      "name": "Crystal Vial",
-      "itemId": 8925
-    },
-    {
-      "count": 1,
-      "name": "Deepmoss Egg",
-      "itemId": 5570,
-      "icon": "inv_egg_03"
-    },
-    {
-      "count": 1,
-      "name": "Depleted Crystal Heart",
-      "itemId": 286648
-    },
-    {
-      "count": 1,
-      "name": "Disengagement Ring",
-      "itemId": 276202,
-      "icon": "inv_jewelry_ring_42"
+      "name": "Embersilk Robes of the Sorcerer",
+      "itemId": 14234,
+      "icon": "inv_chest_cloth_25"
     },
     {
       "count": 2,
-      "name": "Eastsea Powder Keg",
-      "itemId": 268346
+      "name": "Fadeleaf",
+      "itemId": 3818
     },
     {
-      "count": 33,
-      "name": "Empty Vial",
-      "itemId": 3371,
-      "icon": "inv_drink_06"
+      "count": 10,
+      "name": "Firebloom",
+      "itemId": 4625
     },
     {
-      "count": 13,
-      "name": "Fish Oil",
-      "itemId": 17058
-    },
-    {
-      "count": 1,
-      "name": "Fizzgrimble's Mysterious Crate",
-      "itemId": 276065
-    },
-    {
-      "count": 3,
+      "count": 23,
       "name": "Goldthorn",
       "itemId": 3821
     },
     {
-      "count": 3,
-      "name": "Grave Moss",
-      "itemId": 3369
-    },
-    {
-      "count": 3,
-      "name": "Gromsblood",
-      "itemId": 8846
+      "count": 1,
+      "name": "Greater Healing Potion",
+      "itemId": 1710
     },
     {
       "count": 1,
@@ -1571,84 +1576,71 @@
       "icon": "inv_misc_rune_01"
     },
     {
-      "count": 10,
-      "name": "Imbued Vial",
-      "itemId": 18256
-    },
-    {
       "count": 1,
       "name": "Intact Limbs",
       "itemId": 268580,
       "icon": "inv_scroll_03"
     },
     {
-      "count": 16,
-      "name": "Kingsblood",
-      "itemId": 3356,
-      "icon": "inv_misc_herb_03"
+      "count": 1,
+      "name": "Khadgar's Whisker",
+      "itemId": 3358,
+      "icon": "inv_misc_herb_08"
     },
     {
       "count": 1,
-      "name": "Kraul Guano",
-      "itemId": 5801
+      "name": "Lamora's Key",
+      "itemId": 268520
     },
     {
-      "count": 24,
+      "count": 2,
       "name": "Leaded Vial",
       "itemId": 3372,
       "icon": "inv_drink_06"
     },
     {
-      "count": 14,
+      "count": 3,
       "name": "Liferoot",
       "itemId": 3357,
       "icon": "inv_misc_root_02"
     },
     {
-      "count": 5,
-      "name": "Magic Resistance Potion",
-      "itemId": 9036
+      "count": 20,
+      "name": "Mageweave Cloth",
+      "itemId": 4338
     },
     {
-      "count": 18,
+      "count": 17,
       "name": "Maple Seed",
       "itemId": 17034,
       "icon": "inv_misc_food_02"
     },
     {
       "count": 1,
-      "name": "Mystery Meat",
-      "itemId": 12037
+      "name": "Orwin's Shovel",
+      "itemId": 9466
     },
     {
       "count": 1,
-      "name": "Nimboya's Pike",
-      "itemId": 15002
+      "name": "Pendant of Myzrael",
+      "itemId": 4614,
+      "icon": "inv_jewelry_necklace_07"
     },
     {
       "count": 1,
-      "name": "Raptor Egg",
-      "itemId": 3685
-    },
-    {
-      "count": 7,
-      "name": "Red Wolf Meat",
-      "itemId": 12203
-    },
-    {
-      "count": 4,
-      "name": "Riverglades Marsh Gas",
-      "itemId": 274922
-    },
-    {
-      "count": 4,
-      "name": "Shiny Fish Scales",
-      "itemId": 17057
+      "name": "Purple Lotus",
+      "itemId": 8831
     },
     {
       "count": 1,
-      "name": "Small Scroll",
-      "itemId": 17008
+      "name": "Ranger Wristguards of the Whale",
+      "itemId": 7484,
+      "icon": "inv_bracer_09"
+    },
+    {
+      "count": 1,
+      "name": "Scroll of Strength II",
+      "itemId": 2289
     },
     {
       "count": 1,
@@ -1658,28 +1650,38 @@
     },
     {
       "count": 1,
-      "name": "Soft Bushy Tail",
-      "itemId": 4582
+      "name": "Southsea Mojo Boots",
+      "itemId": 20641,
+      "icon": "inv_boots_05"
     },
     {
       "count": 1,
-      "name": "Stranglekelp",
-      "itemId": 3820,
-      "icon": "inv_misc_herb_11"
+      "name": "Staff of Lore",
+      "itemId": 10826,
+      "icon": "inv_staff_27"
+    },
+    {
+      "count": 1,
+      "name": "Stranglevine",
+      "itemId": 249274
+    },
+    {
+      "count": 18,
+      "name": "Sungrass",
+      "itemId": 8838
     },
     {
       "count": 2,
-      "name": "Superior Healing Potion",
-      "itemId": 3928
+      "name": "Swollen Venom Sac",
+      "itemId": 255645
     },
     {
       "count": 2,
-      "name": "Swiftthistle",
-      "itemId": 2452,
-      "icon": "inv_misc_herb_04"
+      "name": "Tender Crocolisk Meat",
+      "itemId": 3667
     },
     {
-      "count": 5,
+      "count": 4,
       "name": "Undermine Clam Chowder",
       "itemId": 16766
     },
@@ -1689,20 +1691,20 @@
       "itemId": 8584
     },
     {
-      "count": 14,
+      "count": 1,
+      "name": "Waylaid Crate: Expert Curiosities",
+      "itemId": 248694
+    },
+    {
+      "count": 2,
       "name": "Wild Steelbloom",
       "itemId": 3355,
       "icon": "inv_misc_flower_01"
     },
     {
       "count": 1,
-      "name": "Witherbark Mallet",
-      "itemId": 216483
-    },
-    {
-      "count": 1,
-      "name": "Yeh'kinya's Bramble",
-      "itemId": 10699
+      "name": "Wildkin Muisek Vessel",
+      "itemId": 9618
     }
   ],
   "professionSkill": {
@@ -1716,7 +1718,7 @@
     },
     "Herbalism": {
       "maxLevel": 300,
-      "level": 255
+      "level": 282
     },
     "First Aid": {
       "maxLevel": 75,
